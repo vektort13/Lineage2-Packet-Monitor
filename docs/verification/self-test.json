@@ -1,0 +1,11 @@
+{
+  "native_widgets": true,
+  "capture_started": false,
+  "passed": false,
+  "checks": [],
+  "screenshots": [],
+  "error": "Runtime dependency check: Native drop bridge test failed: {\"state\":0,\"exception\":0,\"wait\":4294967295,\"thread\":0,\"result\":0,\"sent\":0,\"hp\":0,\"max_hp\":0,\"healing\":0,\"destination\":[24.000,0.000,0.000],\"win32_error\":126,\"stage\":\"install-hook\"}\n",
+  "date": "2026-11-25",
+  "scope": "packaged executable in the current Windows session",
+  "executable": "L2PacketMonitor.exe"
+}

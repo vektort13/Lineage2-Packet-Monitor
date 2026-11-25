@@ -1,0 +1,957 @@
+direction,opcode,id,name,source_override
+client,00,CM_SEND_LOG_OUT,SendLogOut,the_kamael
+client,01,CM_REQ_ATTACK,RequestAttack,the_kamael
+client,03,CM_REQ_START_PLEDGE_WAR,RequestStartPledgeWar,the_kamael
+client,04,CM_REQ_REPLY_START_PLEDGE_WAR,RequestReplyStartPledgeWar,the_kamael
+client,05,CM_REQ_STOP_PLEDGE_WAR,RequestStopPledgeWar,the_kamael
+client,06,CM_REQ_REPLY_STOP_PLEDGE_WAR,RequestReplyStopPledgeWar,the_kamael
+client,07,CM_REQ_SURRENDER_PLEDGE_WAR,RequestSurrenderPledgeWar,the_kamael
+client,08,64,RequestReplySurrenderPledgeWar,the_kamael
+client,09,CM_REQ_SET_PLEDGE_CREST,RequestSetPledgeCrest,the_kamael
+client,0B,CM_REQ_GIVE_NICK_NAME,RequestGiveNickName,the_kamael
+client,0C,CM_REQ_CHARACTER_CREATE,RequestCharacterCreate,the_kamael
+client,0D,CM_REQ_CHARACTER_DELETE,RequestCharacterDelete,the_kamael
+client,0E,CM_SEND_PROTOCOL_VERSION,SendProtocolVersion,the_kamael
+client,0F,CM_MOVE_BACKWARD_TO_LOCATION,MoveBackwardToLocation,the_kamael
+client,10,CM_SAY,Say,the_kamael
+client,11,CM_REQ_ENTER_WORLD,RequestEnterWorld,the_kamael
+client,12,CM_REQ_GAME_START,RequestGameStart,the_kamael
+client,13,CM_REQ_NEW_CHARACTER,RequestNewCharacter,the_kamael
+client,14,CM_REQ_ITEM_LIST,RequestItemList,the_kamael
+client,15,CM_REQ_EQUIP_ITEM,RequestEquipItem,the_kamael
+client,16,CM_REQ_UN_EQUIP_ITEM,RequestUnEquipItem,the_kamael
+client,17,CM_REQ_DROP_ITEM,RequestDropItem,the_kamael
+client,19,CM_REQ_USE_ITEM,RequestUseItem,the_kamael
+client,1A,CM_REQ_TRADE,RequestTrade,the_kamael
+client,1B,CM_REQ_ADD_TRADE_ITEM,RequestAddTradeItem,the_kamael
+client,1C,CM_TRADE_DONE,TradeDone,the_kamael
+client,1F,CM_ACTION,Action,the_kamael
+client,22,CM_REQ_LINK_HTML,RequestLinkHtml,the_kamael
+client,23,CM_REQ_BYPASS_TO_SERVER,RequestBypassToServer,the_kamael
+client,24,CM_REQ_BBS_WRITE,RequestBBSWrite,the_kamael
+client,25,CM_REQ_CREATE_PLEDGE,RequestCreatePledge,the_kamael
+client,26,CM_REQ_JOIN_PLEDGE,RequestJoinPledge,the_kamael
+client,27,CM_REQ_ANSWER_JOIN_PLEDGE,RequestAnswerJoinPledge,the_kamael
+client,28,CM_REQ_WITH_DRAWAL_PLEDGE,RequestWithDrawalPledge,the_kamael
+client,29,CM_REQ_OUST_PLEDGE_MEMBER,RequestOustPledgeMember,the_kamael
+client,2B,CM_C_LOGIN,RequestLogin,the_kamael
+client,2C,CM_REQ_GET_ITEM_FROM_PET,RequestGetItemFromPet,the_kamael
+client,2E,CM_REQ_ALLY_INFO,RequestAllyInfo,the_kamael
+client,2F,CM_REQ_CRYSTALLIZE_ITEM,RequestCrystallizeItem,the_kamael
+client,30,CM__PSM_LIST,RequestPrivateStoreSellManageList,the_kamael
+client,31,CM_SET_PRIVATE_STORE_LIST,SetPrivateStoreSellList,the_kamael
+client,33,CM_REQ_TELEPORT,RequestTeleport,the_kamael
+client,34,CM_SOCIAL_ACTION,SocialAction,the_kamael
+client,35,CM_CHANGE_MOVE_TYPE,ChangeMoveType,the_kamael
+client,36,CM_CHANGE_WAIT_TYPE,ChangeWaitType,the_kamael
+client,37,CM_REQ_SELL_ITEM,RequestSellItem,the_kamael
+client,38 00 00 00,CM__USER_ACK,UserAck,goddess_of_destruction
+client,39,CM_REQ_MAGIC_SKILL_USE,RequestMagicSkillUse,the_kamael
+client,3A,CM_SEND_APPERING,SendAppearing,the_kamael
+client,3B,CM_SEND_WARE_HOUSE_DEPOSIT_LIST,SendWareHouseDepositList,the_kamael
+client,3C,CM_SEND_WARE_HOUSE_WITHDRAW_LIST,SendWareHouseWithdrawList,the_kamael
+client,3D,CM_REQ_SHORT_CUT_REG,RequestShortCutReg,the_kamael
+client,3E,CM_REQ_SHORT_CUT_USE,RequestShortCutUse,the_kamael
+client,3F,CM_REQ_SHORT_CUT_DEL,RequestShortCutDel,the_kamael
+client,40,CM_REQ_BUY_ITEM,RequestBuyItem,the_kamael
+client,41,CM_REQ_DISMISS_PLEDGE,RequestDismissPledge,the_kamael
+client,42,CM_REQ_JOIN_PARTY,RequestJoinParty,the_kamael
+client,43,CM_REQ_ANSWER_JOIN_PARTY,RequestAnswerJoinParty,the_kamael
+client,44,CM_REQ_WITH_DRAWAL_PARTY,RequestWithDrawalParty,the_kamael
+client,45,CM_REQ_OUST_PARTY_MEMBER,RequestOustPartyMember,the_kamael
+client,46,CM_REQ_DISMISS_PARTY,RequestDismissParty,the_kamael
+client,47,CM_CAN_NOT_MOVE_ANYMORE,CanNotMoveAnymore,the_kamael
+client,48,CM_REQ_TARGET_CANCEL,RequestTargetCancel,the_kamael
+client,49,CM_SAY2,Say2,the_kamael
+client,4D,CM_REQ_PLEDGE_MEMBER_LIST,RequestPledgeMemberList,the_kamael
+client,4F,CM_REQ_MAGIC_LIST,RequestMagicList,the_kamael
+client,50,CM_REQ_SKILL_ITEM,RequestSkillList,the_kamael
+client,52,CM_MOVE_WITH_DELTA,MoveWithDelta,the_kamael
+client,53,CM_GET_ON_VEHICLE,GetOnVehicle,the_kamael
+client,54,CM_GET_OFF_VEHICLE,GetOffVehicle,the_kamael
+client,55,CM_ANSWER_TRADE_REQ,AnswerTradeRequest,the_kamael
+client,56,CM_REQ_ACTION_USE,RequestActionUse,the_kamael
+client,57,CM_REQ_RESTART,RequestRestart,the_kamael
+client,58,CM_REQ_SIEGE_INFO,RequestSiegeInfo,the_kamael
+client,59,CM__VL,ValidateLocation,the_kamael
+client,5A,128,RequestSEKCustom,the_kamael
+client,5B,CM_START_ROTATING,StartRotating,the_kamael
+client,5C,CM_FINISH_ROTATING,FinishRotating,the_kamael
+client,5E,CM_REQ_SHOWBOARD,RequestShowboard,the_kamael
+client,5F,CM_REQ_ENCHANT_ITEM,RequestEnchantItem,the_kamael
+client,60,CM_REQ_DESTROY_ITEM,RequestDestroyItem,the_kamael
+client,62,CM_REQ_QUEST_LIST,RequestQuestList,the_kamael
+client,63,CM_REQ_DESTROY_QUEST,RequestDestroyQuest,the_kamael
+client,65,CM_REQ_PLEDGE_INFO,RequestPledgeInfo,the_kamael
+client,66,CM_REQ_PLEDGE_EXTENDED_INFO,RequestPledgeExtendedInfo,the_kamael
+client,67,CM_REQ_PLEDGE_CREST,RequestPledgeCrest,the_kamael
+client,69,CM_REQ_SURRENDER_PERSONALLY,RequestSurrenderPersonally,prelude_pts
+client,6A,CM_REQ_FRIEND_INFO_LIST,RequestFriendInfoList,the_kamael
+client,6B,CM_REQ_SEND_L2_FRIEND_SAY,RequestSendL2FriendSay,the_kamael
+client,6C,CM_REQ_OPEN_MINIMAP,RequestOpenMinimap,the_kamael
+client,6D,CM_REQ_SEND_MSN_CHAT_LOG,RequestSendMsnChatLog,the_kamael
+client,6E,184,RequestReload,the_kamael
+client,6F,CM_REQ_HENNA_EQUIP,RequestHennaEquip,the_kamael
+client,70,CM_REQ_HENNA_UNEQUIP_LIST,RequestHennaUnequipList,the_kamael
+client,71,CM_REQ_HENNA_UNEQUIP_INFO,RequestHennaUnequipInfo,the_kamael
+client,72,CM_REQ_HENNA_UNEQUIP,RequestHennaUnequip,the_kamael
+client,73,CM_REQ_ACQUIRE_SKILL_INFO,RequestAcquireSkillInfo,the_kamael
+client,74,CM_SEND_BYPASS_BUILD_CMD,SendBypassBuildCmd,the_kamael
+client,75,CM_MOVE_TO_LOCATION_IN_VEHICLE,MoveToLocationInVehicle,the_kamael
+client,76,CM_CAN_NOT_MOVE_ANYMORE_VEHICLE,CanNotMoveAnymore(Vehicle),the_kamael
+client,77,CM_REQ_FRIEND_INVITE,RequestFriendInvite,the_kamael
+client,78,CM_REQ_FRIEND_ADD_REPLY,RequestFriendAddReply,the_kamael
+client,7A,CM_REQ_FRIEND_DEL,RequestFriendDel,the_kamael
+client,7B,CM_REQ_CHARACTER_RESTORE,RequestCharacterRestore,the_kamael
+client,7C,CM_REQ_ACQUIRE_SKILL,RequestAcquireSkill,the_kamael
+client,7D,CM_REQ_RESTART_POINT,RequestRestartPoint,the_kamael
+client,7E,CM_REQ_GM_COMMAND,RequestGMCommand,the_kamael
+client,7F,CM_REQ_LIST_PARTY_WATING,RequestListPartyWaiting,the_kamael
+client,80,CM_REQ_MANAGE_PARTY_ROOM,RequestManagePartyRoom,the_kamael
+client,81,CM_REQ_JOIN_PARTY_ROOM,RequestJoinPartyRoom,the_kamael
+client,83,CM_SEND_PRIVATE_STORE_BUY_LIST,SendPrivateStoreBuyList,the_kamael
+client,84,130,RequestReviveReply,the_kamael
+client,85,CM_REQ_TUTORIAL_LINK_HTML,RequestTutorialLinkHtml,the_kamael
+client,86,CM_REQ_TUTORIAL_PASS_CMD_TO_SERVER,RequestTutorialPassCmdToServer,the_kamael
+client,87,CM_REQ_TUTORIAL_QUESTION_MARK_PRESSED,RequestTutorialQuestionMarkPressed,the_kamael
+client,88,CM_REQ_TUTORIAL_CLIENT_EVENT,RequestTutorialClientEvent,the_kamael
+client,89,CM_REQ_PETITION,RequestPetition,the_kamael
+client,8A,CM_REQ_PETITION_CANCEL,RequestPetitionCancel,the_kamael
+client,8B,CM_REQ_GM_LIST,RequestGMList,the_kamael
+client,8C,CM_REQ_JOIN_ALLY,RequestJoinAlly,the_kamael
+client,8D,CM_REQ_ANSWER_JOIN_ALLY,RequestAnswerJoinAlly,the_kamael
+client,8E,CM_REQ_WITHDRAW_ALLY,RequestWithdrawAlly,the_kamael
+client,8F,CM_REQ_OUST_ALLY,RequestOustAlly,the_kamael
+client,90,CM_REQ_DISMISS_ALLY,RequestDismissAlly,the_kamael
+client,91,CM_REQ_SET_ALLY_CREST,RequestSetAllyCrest,the_kamael
+client,92,CM_REQ_ALLY_CREST,RequestAllyCrest,the_kamael
+client,93,CM_REQ_CHANGE_PET_NAME,RequestChangePetName,the_kamael
+client,94,CM_REQ_PET_USE_ITEM,RequestPetUseItem,the_kamael
+client,95,CM_REQ_GIVE_ITEM_TO_PET,RequestGiveItemToPet,the_kamael
+client,96,CM__PS_QUIT,RequestPrivateStoreSellQuit,the_kamael
+client,97,CM__SET_PS_MSG,SetPrivateStoreSellMsg,the_kamael
+client,98,CM_REQ_PET_GET_ITEM,RequestPetGetItem,the_kamael
+client,99,CM__PSM_BUY_LIST,RequestPrivateStoreBuyManageList,the_kamael
+client,9A,CM_SET_PRIVATE_STORE_BUY_LIST,SetPrivateStoreBuyList,the_kamael
+client,9B,CM_REPLY_STOP_ALLIANCE_WAR,ReplyStopAllianceWar,c1_harbingers_of_war
+client,9C,CM__PSM_BUY_QUIT,RequestPrivateStoreBuyManageQuit,the_kamael
+client,9D,CM__SET_PS_BUY_MSG,SetPrivateStoreBuyMsg,the_kamael
+client,9F,CM_SEND_PRIVATE_STORE_BUY_BUY_LIST,SendPrivateStoreSellList,the_kamael
+client,A0,CM_SEND_TIME_CHECK,SendTimeCheck,the_kamael
+client,A6,CM_REQ_SKILL_COOL_TIME,RequestSkillCoolTime,the_kamael
+client,A7,CM_REQ_PACKAGE_SENDABLE_ITEM_LIST,RequestPackageSendableItemList,the_kamael
+client,A8,CM_REQ_PACKAGE_SEND,RequestPackageSend,the_kamael
+client,A9,CM_REQ_BLOCK,RequestBlock,the_kamael
+client,AA,CM_REQ_CASTLE_SIEGE_INFO,RequestCastleSiegeInfo,the_kamael
+client,AB,CM_REQ_CASTLE_SIEGE_ATTACKER_LIST,RequestCastleSiegeAttackerList,the_kamael
+client,AC,CM_REQ_CASTLE_SIEGE_DEFENDER_LIST,RequestCastleSiegeDefenderList,the_kamael
+client,AD,CM_REQ_JOIN_CASTLE_SIEGE,RequestJoinCastleSiege,the_kamael
+client,AE,CM_REQ_CONFIRM_CASTLE_SIEGE_WAITING_LIST,RequestConfirmCastleSiegeWaitingList,the_kamael
+client,AF,CM_REQ_SET_CASTLE_SIEGE_TIME,RequestSetCastleSiegeTime,the_kamael
+client,B0,CM_REQ_MULTI_SELL_CHOOSE,RequestMultiSellChoose,the_kamael
+client,B1,CM_NET_PING,NetPing,the_kamael
+client,B2,CM_REQ_REMAIN_TIME,RequestRemainTime,the_kamael
+client,B3,CM_BYPASS_USER_CMD,BypassUserCmd,the_kamael
+client,B4,CM_SNOOP_QUIT,GMSnoopEnd,the_kamael
+client,B5,CM_REQ_RECIPE_BOOK_OPEN,RequestRecipeBookOpen,the_kamael
+client,B6,CM_REQ_RECIPE_ITEM_DELETE,RequestRecipeItemDelete,the_kamael
+client,B7,CM_REQ_RECIPE_ITEM_MAKE_INFO,RequestRecipeItemMakeInfo,the_kamael
+client,B8,CM_REQ_RECIPE_ITEM_MAKE_SELF,RequestRecipeItemMakeSelf,the_kamael
+client,B9,CM_REQ_RECIPE_SHOP_MANAGE_LIST,RequestRecipeShopManageList,the_kamael
+client,BA,CM_REQ_RECIPE_SHOP_MESSAGE_SET,RequestRecipeShopMessageSet,the_kamael
+client,BB,CM_REQ_RECIPE_SHOP_LIST_SET,RequestRecipeShopListSet,the_kamael
+client,BC,CM_REQ_RECIPE_SHOP_MANAGE_QUIT,RequestRecipeShopManageQuit,the_kamael
+client,BD,CM_REQ_RECIPE_SHOP_MANAGE_CANCEL,RequestRecipeShopManageCancel,the_kamael
+client,BE,CM_REQ_RECIPE_SHOP_MAKE_INFO,RequestRecipeShopMakeInfo,the_kamael
+client,BF,CM_REQ_RECIPE_SHOP_MAKE_DO,RequestRecipeShopMakeDo,the_kamael
+client,C0,CM_REQ_RECIPE_SHOP_SELL_LIST,RequestRecipeShopSellList,the_kamael
+client,C1,CM_REQ_OBSERVER_END,RequestObserverEnd,the_kamael
+client,C2,CM_VOTE_SOCIALITY,VoteSociality,the_kamael
+client,C3,CM_REQ_HENNA_ITEM_LIST,RequestHennaItemList,the_kamael
+client,C4,CM_REQ_HENNA_ITEM_INFO,RequestHennaItemInfo,the_kamael
+client,C5,CM_REQ_BUY_SEED,RequestBuySeed,the_kamael
+client,C6,CM_CONFIRM_DLG,ConfirmDlg,the_kamael
+client,C7,CM_REQ_PREVIEW_ITEM,RequestPreviewItem,the_kamael
+client,C8,CM_REQ_SSQ_STATUS,RequestSSQStatus,the_kamael
+client,C9,CM_PETITION_VOTE,PetitionVote,the_kamael
+client,CB,CM_REPLY_GAME_GUARD_QUERY,ReplyGameGuardQuery,the_kamael
+client,CC,CM_REQ_PLEDGE_POWER,RequestPledgePower,the_kamael
+client,CD,CM_REQ_MAKE_MACRO,RequestMakeMacro,the_kamael
+client,CE,CM_REQ_DELETE_MACRO,RequestDeleteMacro,the_kamael
+client,CF,CM_REQ_PROCURE_CROP,RequestProcureCrop,the_kamael
+client,D0 01 00,CM_REQ_MANOR_LIST,RequestManorList,the_kamael
+client,D0 02 00,CM_REQ_PROCURE_CROP_LIST,RequestProcureCropList,the_kamael
+client,D0 03 00,CM_REQ_SET_SEED,RequestSetSeed,the_kamael
+client,D0 04 00,CM_REQ_SET_CROP,RequestSetCrop,the_kamael
+client,D0 05 00,CM_REQ_WRITE_HERO_WORDS,RequestWriteHeroWords,the_kamael
+client,D0 06 00,CM_REQ_EX_ASK_JOIN_MPCC,RequestExAskJoinMPCC,the_kamael
+client,D0 07 00,CM_REQ_EX_ACCEPT_JOIN_MPCC,RequestExAcceptJoinMPCC,the_kamael
+client,D0 08 00,CM_REQ_EX_OUST_FROM_MPCC,RequestExOustFromMPCC,the_kamael
+client,D0 09 00,CM_REQ_OUST_FROM_PARTY_ROOM,RequestOustFromPartyRoom,the_kamael
+client,D0 0A 00,CM_REQ_DISMISS_PARTY_ROOM,RequestDismissPartyRoom,the_kamael
+client,D0 0B 00,CM_REQ_WITHDRAW_PARTY_ROOM,RequestWithdrawPartyRoom,the_kamael
+client,D0 0C 00,CM_REQ_HAND_OVER_PARTY_MASTER,RequestHandOverPartyMaster,the_kamael
+client,D0 0D 00,CM_REQ_AUTO_SOUL_SHOT,RequestAutoSoulShot,the_kamael
+client,D0 0E 00,CM_REQ_EX_ENCHANT_SKILL_INFO,RequestExEnchantSkillInfo,the_kamael
+client,D0 0F 00,CM_REQ_EX_ENCHANT_SKILL,RequestExEnchantSkill,the_kamael
+client,D0 10 00,CM_REQ_EX_PLEDGE_CREST_LARGE,RequestExPledgeCrestLarge,c4_scions_of_destiny
+client,D0 11 00,CM_REQ_EX_SET_PLEDGE_CREST_LARGE,RequestExSetPledgeCrestLarge,c4_scions_of_destiny
+client,D0 12 00,208,RequestPledgeSetAcademyMaster,the_kamael
+client,D0 13 00,209,RequestPledgePowerGradeList,the_kamael
+client,D0 14 00,210,RequestPledgeMemberPowerInfo,the_kamael
+client,D0 15 00,211,RequestPledgeSetMemberPowerGrade,the_kamael
+client,D0 16 00,212,RequestPledgeMemberInfo,the_kamael
+client,D0 17 00,213,RequestPledgeWarList,the_kamael
+client,D0 18 00,214,RequestExFishRanking,the_kamael
+client,D0 19 00,215,RequestPCCafeCouponUse,the_kamael
+client,D0 1A 00,234,RequestExOrcMove,the_kamael
+client,D0 1B 00,220,RequestDuelStart,the_kamael
+client,D0 1C 00,221,RequestDuelAnswerStart,the_kamael
+client,D0 1D 00,235,RequestExSetTutorial,the_kamael
+client,D0 1E 00,CM_REQ_EX_RQ_ITEM_LINK,RequestExRqItemLink,the_kamael
+client,D0 1F 00,237,RequestCannotMoveAnymoreAirShip,the_kamael
+client,D0 20 00,238,RequestMoveToLocationInAirShip,the_kamael
+client,D0 21 00,232,RequestKeyMapping,the_kamael
+client,D0 22 00,239,RequestSaveKeyMapping,the_kamael
+client,D0 23 00,240,RequestExRemoveItemAttribute,the_kamael
+client,D0 24 00,241,RequestSaveInventoryOrder,the_kamael
+client,D0 25 00,CM_REQ_EXIT_PARTY_MATCHING_WAITING_ROOM,RequestExitPartyMatchingWaitingRoom,the_kamael
+client,D0 26 00,222,RequestConfirmTargetItem,the_kamael
+client,D0 27 00,223,RequestConfirmRefinerItem,the_kamael
+client,D0 28 00,224,RequestConfirmGemStone,the_kamael
+client,D0 29 00,CM_REQ_OLYMPIAD_OBSERVER_END,RequestOlympiadObserverEnd,the_kamael
+client,D0 2A 00,216,RequestCursedWeaponList,the_kamael
+client,D0 2B 00,217,RequestCursedWeaponLocation,the_kamael
+client,D0 2C 00,218,RequestPledgeReorganizeMember,the_kamael
+client,D0 2D 00,219,RequestExMPCCShowPartyMembersInfo,gracia_final
+client,D0 2F 00,CM_REQ_ASK_JOIN_PARTY_ROOM,RequestAskJoinPartyRoom,gracia_final
+client,D0 30 00,CM_ANSWER_JOIN_PARTY_ROOM,AnswerJoinPartyRoom,gracia_final
+client,D0 31 00,CM_REQ_LIST_PARTY_MATCHING_WAITING_ROOM,RequestListPartyMatchingWaitingRoom,gracia_final
+client,D0 32 00,242,RequestExEnchantSkillSafe,gracia_final
+client,D0 33 00,243,RequestExEnchantSkillUntrain,gracia_final
+client,D0 34 00,244,RequestExEnchantSkillChange,gracia_final
+client,D0 35 00,247,RequestExEnchantItemAttribute,gracia_final
+client,D0 36 00,231,RequestGotoLobby,goddess_of_destruction
+client,D0 37 00,246,RequestExGetOffAirShip,the_kamael
+client,D0 38 00,479,RequestMoveToLocationAirShip,gracia_final
+client,D0 39 00,271,RequestBidItemAuction,gracia_final
+client,D0 3A 00,272,RequestInfoItemAuction,gracia_final
+client,D0 3B 00,230,RequestExChangeName,gracia_final
+client,D0 3C 00,248,RequestAllCastleInfo,gracia_final
+client,D0 3D 00,233,RequestAllFortressInfo,gracia_final
+client,D0 3E 00,249,RequestAllAgitInfo,gracia_final
+client,D0 3F 00,250,RequestFortressSiegeInfo,gracia_final
+client,D0 40 00,207,RequestGetBossRecord,gracia_final
+client,D0 41 00,225,RequestRefine,gracia_final
+client,D0 42 00,226,RequestConfirmCancelItem,gracia_final
+client,D0 43 00,227,RequestRefineCancel,gracia_final
+client,D0 44 00,228,RequestExMagicSkillUseGround,gracia_final
+client,D0 45 00,229,RequestDuelSurrender,gracia_final
+client,D0 46 00,251,RequestExEnchantSkillInfoDetail,gracia_final
+client,D0 48 00,252,RequestFortressMapInfo,gracia_final
+client,D0 49 00,253,RequestPVPMatchRecord,gracia_final
+client,D0 4A 00,254,SetPrivateStoreWholeMsg,gracia_final
+client,D0 4B 00,255,RequestDispel,gracia_final
+client,D0 4C 00,256,RequestExTryToPutEnchantTargetItem,gracia_final
+client,D0 4D 00,257,RequestExTryToPutEnchantSupportItem,gracia_final
+client,D0 4E 00,258,RequestExCancelEnchantItem,gracia_final
+client,D0 4F 00,259,RequestChangeNicknameColor,gracia_final
+client,D0 50 00,260,RequestResetNickname,gracia_final
+client,D0 51 00 00 00 00 00,261,RequestBookMarkSlotInfo,gracia_final
+client,D0 51 00 01 00 00 00,262,RequestSaveBookMarkSlot,gracia_final
+client,D0 51 00 02 00 00 00,263,RequestModifyBookMarkSlot,gracia_final
+client,D0 51 00 03 00 00 00,264,RequestDeleteBookMarkSlot,gracia_final
+client,D0 51 00 04 00 00 00,265,RequestTeleportBookMark,gracia_final
+client,D0 51 00 05 00 00 00,266,RequestChangeBookMarkSlot,gracia_final
+client,D0 52 00,267,RequestWithDrawPremiumItem,gracia_final
+client,D0 53 00,273,RequestJump,gracia_final
+client,D0 54 00,268,RequestStartShowCrataeCubeRank,gracia_final
+client,D0 55 00,269,RequestStopShowCrataeCubeRank,gracia_final
+client,D0 56 00,270,RequestNotifyStartMiniGame,gracia_final
+client,D0 57 00,274,RequestJoinDominionWar,gracia_final
+client,D0 58 00,275,RequestDominionInfo,gracia_final
+client,D0 59 00,276,RequestExCleftEnter,gracia_final
+client,D0 5A 00,277,RequestExBlockGameEnter,goddess_of_destruction
+client,D0 5B 00,278,RequestEndScenePlayer,gracia_final
+client,D0 5C 00,279,RequestExBlockGameVote,gracia_final
+client,D0 5D 00,280,RequestListMpccWaiting,gracia_final
+client,D0 5E 00,281,RequestManageMpccRoom,gracia_final
+client,D0 5F 00,282,RequestJoinMpccRoom,gracia_final
+client,D0 60 00,283,RequestOustFromMpccRoom,gracia_final
+client,D0 61 00,284,RequestDismissMpccRoom,gracia_final
+client,D0 62 00,285,RequestWithdrawMpccRoom,gracia_final
+client,D0 63 00,286,RequestSeedPhase,gracia_final
+client,D0 64 00,287,RequestMpccPartymasterList,gracia_final
+client,D0 65 00,292,RequestPostItemList,gracia_epilogue
+client,D0 66 00,293,RequestSendPost,gracia_epilogue
+client,D0 67 00,294,RequestReceivedPostList,gracia_epilogue
+client,D0 68 00,295,RequestDeleteReceivedPost,gracia_epilogue
+client,D0 69 00,296,RequestReceivedPost,gracia_epilogue
+client,D0 6A 00,297,RequestReceivePost,gracia_epilogue
+client,D0 6B 00,298,RequestRejectPost,gracia_epilogue
+client,D0 6C 00,299,RequestSentPostList,gracia_epilogue
+client,D0 6D 00,300,RequestDeleteSentPost,gracia_epilogue
+client,D0 6E 00,301,RequestSentPost,gracia_epilogue
+client,D0 6F 00,302,RequestCancelSentPost,gracia_epilogue
+client,D0 70 00,303,RequestShowNewUserPetition,gracia_epilogue
+client,D0 71 00,304,RequestExShowStepTwo,gracia_epilogue
+client,D0 72 00,305,RequestExShowStepThree,gracia_epilogue
+client,D0 73 00,314,RequestExConnectToRaidServer,freya
+client,D0 74 00,315,RequestExReturnFromRaidServer,freya
+client,D0 75 00,306,RequestRefundItem,gracia_epilogue
+client,D0 76 00,307,RequestBuySellUIClose,gracia_epilogue
+client,D0 77 00,308,RequestEventMatchObserverEnd,gracia_epilogue
+client,D0 78 00,316,RequestPartyLootingModify,freya
+client,D0 79 00,317,RequestAnswerPartyLootingModify,freya
+client,D0 7A 00,318,RequestAnswerCoupleAction,freya
+client,D0 7B 00,310,RequestExBR_EventRankerList,freya
+client,D0 7C 00,319,RequestAskMemberShip,freya
+client,D0 7D 00,320,RequestAddExpandQuestAlarm,freya
+client,D0 7E 00,321,RequestNewVoteSystem,freya
+client,D0 7F 00,CM_GET_ON_SHUTTLE,GetOnShuttle,goddess_of_destruction
+client,D0 80 00,CM_GET_OFF_SHUTTLE,GetOffShuttle,goddess_of_destruction
+client,D0 81 00,CM_MTL_SHUTTLE,MoveToLocationInShuttle,goddess_of_destruction
+client,D0 82 00,CM_CAN_NOT_MOVE_ANYMORE_SHUTTLE,CanNotMoveAnymoreInShuttle,goddess_of_destruction
+client,D0 83 00 01 00 00 00,325,RequestExAgitInitialize,high_five
+client,D0 83 00 02 00 00 00,326,RequestExAgitDetailInfo,high_five
+client,D0 83 00 03 00 00 00,327,RequestExMyAgitState,high_five
+client,D0 83 00 04 00 00 00,328,RequestExRegisterAgitForBidStep1,high_five
+client,D0 83 00 05 00 00 00,329,RequestExRegisterAgitForBidStep3,high_five
+client,D0 83 00 07 00 00 00,330,RequestExConfirmCancelRegisteringAgit,high_five
+client,D0 83 00 08 00 00 00,331,RequestExProceedCancelRegisteringAgit,high_five
+client,D0 83 00 09 00 00 00,332,RequestExConfirmCancelAgitLot,high_five
+client,D0 83 00 0A 00 00 00,333,RequestExProceedCancelAgitLot,high_five
+client,D0 83 00 0D 00 00 00,334,RequestExApplyForBidStep1,high_five
+client,D0 83 00 0E 00 00 00,335,RequestExApplyForBidStep2,high_five
+client,D0 83 00 0F 00 00 00,336,RequestExApplyForBidStep3,high_five
+client,D0 83 00 10 00 00 00,337,RequestExReBid,high_five
+client,D0 83 00 11 00 00 00,338,RequestExAgitListForLot,high_five
+client,D0 83 00 12 00 00 00,339,RequestExApplyForAgitLotStep1,high_five
+client,D0 83 00 13 00 00 00,340,RequestExApplyForAgitLotStep2,high_five
+client,D0 83 00 14 00 00 00,341,RequestExAgitListForBid,high_five
+client,D0 84 00,342,RequestExAddPostFriendForPostBox,high_five
+client,D0 85 00,343,RequestExDeletePostFriendForPostBox,high_five
+client,D0 86 00,344,RequestExShowPostFriendListForPostBox,high_five
+client,D0 87 00,345,RequestExFriendListForPostBox,high_five
+client,D0 88 00,CM_REQ_OLYMPIAD_MATCH_LIST,RequestOlympiadMatchList,high_five
+client,D0 89 00,288,RequestBR_GamePoint,high_five
+client,D0 8A 00,289,RequestBR_ProductList,high_five
+client,D0 8B 00,290,RequestBR_ProductInfo,high_five
+client,D0 8C 00,291,RequestBR_BuyProduct,high_five
+client,D0 8D 00,309,RequestBR_RecentProductList,high_five
+client,D0 8E 00,311,RequestBR_MiniGameLoadScores,high_five
+client,D0 8F 00,312,RequestBR_MiniGameInsertScore,high_five
+client,D0 90 00,313,RequestBR_LectureMark,high_five
+client,D0 91 00,357,RequestCrystallizeEstimate,goddess_of_destruction
+client,D0 92 00,358,RequestCrystallizeItemCancel,goddess_of_destruction
+client,D0 93 00,359,RequestExEscapeScene,goddess_of_destruction
+client,D0 94 00,360,RequestFlyMove,goddess_of_destruction
+client,D0 95 00,361,RequestSurrenderPledgeWarEX,goddess_of_destruction
+client,D0 96 00 02 00 00 00,362,RequestDynamicQuestProgressInfo,goddess_of_destruction
+client,D0 96 00 03 00 00 00,363,RequestDynamicQuestScoreBoard,goddess_of_destruction
+client,D0 96 00 04 00 00 00,364,RequestDynamicQuestHTML,goddess_of_destruction
+client,D0 97 00,365,RequestFriendDetailInfo,goddess_of_destruction
+client,D0 98 00,366,RequestUpdateFriendMemo,goddess_of_destruction
+client,D0 99 00,367,RequestUpdateBlockMemo,goddess_of_destruction
+client,D0 9A 00,368,RequestInzonePartyInfoHistory,goddess_of_destruction
+client,D0 9B 00,369,RequestCommissionRegistrableItemList,goddess_of_destruction
+client,D0 9C 00,370,RequestCommissionInfo,goddess_of_destruction
+client,D0 9D 00,371,RequestCommissionRegister,goddess_of_destruction
+client,D0 9E 00,372,RequestCommissionCancel,goddess_of_destruction
+client,D0 9F 00,373,RequestCommissionDelete,goddess_of_destruction
+client,D0 A0 00,374,RequestCommissionList,goddess_of_destruction
+client,D0 A1 00,375,RequestCommissionBuyInfo,goddess_of_destruction
+client,D0 A2 00,376,RequestCommissionBuyItem,goddess_of_destruction
+client,D0 A3 00,377,RequestCommissionRegisteredItem,goddess_of_destruction
+client,D0 A4 00,378,RequestCallToChangeClass,goddess_of_destruction
+client,D0 A5 00,379,RequestChangeToAwakenedClass,goddess_of_destruction
+client,D0 A6 00,380,RequestWorldStatistics,goddess_of_destruction
+client,D0 A7 00,381,RequestUserStatistics,goddess_of_destruction
+client,D0 A8 00,462,RequestRegistPartySubstitute,goddess_of_destruction
+client,D0 A9 00,463,RequestDeletePartySubstitute,goddess_of_destruction
+client,D0 AA 00,464,RequestRegistWaitingSubstitute,goddess_of_destruction
+client,D0 AB 00,465,RequestAcceptWaitingSubstitute,goddess_of_destruction
+client,D0 AC 00,348,RequestWebSessionID,goddess_of_destruction
+client,D0 AD 00,322,RequestEx2ndPasswordCheck,goddess_of_destruction
+client,D0 AE 00,323,RequestEx2ndPasswordVerify,goddess_of_destruction
+client,D0 AF 00,324,RequestEx2ndPasswordReq,goddess_of_destruction
+client,D0 B0 00,349,RequestCharacterNameCreatable,goddess_of_destruction
+client,D0 B1 00,346,RequestGoodsInventoryInfo,goddess_of_destruction
+client,D0 B2 00,347,RequestUseGoodsInventoryItem,goddess_of_destruction
+client,D0 B3 00,382,RequestFirstPlayStart,goddess_of_destruction
+client,D0 B4 00,383,RequestFlyMoveStart,goddess_of_destruction
+client,D0 B5 00,384,RequestHardWareInfo,goddess_of_destruction
+client,D0 B7 00,385,RequestChangeAttributeTargetItem,goddess_of_destruction
+client,D0 B8 00,386,RequestChangeAttributeItem,goddess_of_destruction
+client,D0 B9 00,387,RequestChangeAttributeCancel,goddess_of_destruction
+client,D0 BA 00,466,RequestExchangeSubstitute,goddess_of_destruction
+client,D0 BB 00,388,RequestBR_PresentBuyProduct,goddess_of_destruction
+client,D0 BC 00,389,RequestConfirmMenteeAdd,goddess_of_destruction
+client,D0 BD 00,390,RequestMentorCancel,goddess_of_destruction
+client,D0 BE 00,391,RequestMentorList,goddess_of_destruction
+client,D0 BF 00,392,RequestMenteeAdd,goddess_of_destruction
+client,D0 C0 00,393,RequestMenteeWaitingList,goddess_of_destruction
+client,D0 C1 00,394,RequestJoinPledgeByName,goddess_of_destruction
+client,D0 C2 00,395,RequestInzoneWaitingTime,goddess_of_destruction
+client,D0 CC 00,405,RequestExTryToPut_Shape_Shifting_TargetItem,goddess_of_destruction
+client,D0 CD 00,406,RequestExTryToPut_Shape_Shifting_EnchantSupportItem,goddess_of_destruction
+client,D0 CE 00,407,RequestExCancelShape_Shifting_Item,goddess_of_destruction
+client,D0 CF 00,408,RequestShape_Shifting_Item,goddess_of_destruction
+client,D0 D0 00,CM_NC_GUARD_SEND_DATA_TO_SERVER,NCGuardSendDataToServer,tauti
+server,00,SM_DIE,Die,the_kamael
+server,01,SM_REVIVE,Revive,the_kamael
+server,02,11,AttackOutofRange,the_kamael
+server,03,12,AttackinCoolTime,the_kamael
+server,04,13,AttackDeadTarget,the_kamael
+server,05,SM_SPAWN_ITEM,SpawnItem,the_kamael
+server,08,SM_DELETE_OBJECT,DeleteObject,the_kamael
+server,09,SM_CHARACTER_SELECTION_INFO,CharacterSelectionInfo,the_kamael
+server,0A,SM_LOGIN_FAIL,LoginFail,the_kamael
+server,0B,SM_CHARACTER_SELECTED,CharacterSelected,the_kamael
+server,0C,SM_NPC_INFO,NpcInfo,the_kamael
+server,0D,SM_NEW_CHARACTER_SUCCESS,NewCharacterSuccess,the_kamael
+server,0E,SM_NEW_CHARACTER_FAIL,NewCharacterFail,the_kamael
+server,0F,SM_CHARACTER_CREATE_SUCCESS,CharacterCreateSuccess,the_kamael
+server,10,SM_CHARACTER_CREATE_FAIL,CharacterCreateFail,the_kamael
+server,11,SM_ITEM_LIST,ItemList,the_kamael
+server,12,SM_SUN_RISE,SunRise,the_kamael
+server,13,SM_SUN_SET,SunSet,the_kamael
+server,14,SM_TRADE_START,TradeStart,the_kamael
+server,15,49,TradeStartOk,the_kamael
+server,16,SM_DROP_ITEM,DropItem,the_kamael
+server,17,SM_GET_ITEM,GetItem,the_kamael
+server,18,SM_STATUS_UPDATE,StatusUpdate,the_kamael
+server,19,SM_NPC_HTML_MESSAGE,NpcHtmlMessage,the_kamael
+server,1A,SM_TRADE_OWN_ADD,TradeOwnAdd,the_kamael
+server,1B,SM_TRADE_OTHER_ADD,TradeOtherAdd,the_kamael
+server,1C,SM_TRADE_DONE,TradeDone,the_kamael
+server,1D,SM_CHARACTER_DELETE_SUCCESS,CharacterDeleteSuccess,the_kamael
+server,1E,SM_CHARACTER_DELETE_FAIL,CharacterDeleteFail,the_kamael
+server,1F,SM_ACTION_FAIL,ActionFail,the_kamael
+server,20,56,ServerClose,the_kamael
+server,21,SM_INVENTORY_UPDATE,InventoryUpdate,the_kamael
+server,22,SM_TELEPORT_TO_LOCATION,TeleportToLocation,the_kamael
+server,23,SM_TARGET_SELECTED,TargetSelected,the_kamael
+server,24,SM_TARGET_UNSELECTED,TargetUnselected,the_kamael
+server,25,SM_AUTO_ATTACK_START,AutoAttackStart,the_kamael
+server,26,SM_AUTO_ATTACK_STOP,AutoAttackStop,the_kamael
+server,27,SM_SOCIAL_ACTION,SocialAction,the_kamael
+server,28,SM_CHANGE_MOVE_TYPE,ChangeMoveType,the_kamael
+server,29,SM_CHANGE_WAIT_TYPE,ChangeWaitType,the_kamael
+server,2A,SM_MANAGE_PLEDGE_POWER,ManagePledgePower,the_kamael
+server,2B,SM_CREATE_PLEDGE,CreatePledge,the_kamael
+server,2C,SM_ASK_JOIN_PLEDGE,AskJoinPledge,the_kamael
+server,2D,SM_JOIN_PLEDGE,JoinPledge,the_kamael
+server,2E,SM_VERSION_CHECK,VersionCheck,the_kamael
+server,2F,SM_MOVE_TO_LOCATION,MoveToLocation,the_kamael
+server,30,SM_NPC_SAY,NpcSay,the_kamael
+server,31,SM_CHAR_INFO,CharInfo,the_kamael
+server,32,SM_USER_INFO,UserInfo,the_kamael
+server,33,SM_ATTACK,Attack,the_kamael
+server,34,SM_WITHDRAWAL_PLEDGE,WithdrawalPledge,c2_age_of_splendor
+server,35,SM_OUST_PLEDGE_MEMBER,OustPledgeMember,c2_age_of_splendor
+server,36,SM_SET_OUST_PLEDGE_MEMBER,SetOustPledgeMember,c2_age_of_splendor
+server,37,75,DismissPledge,c2_age_of_splendor
+server,38,76,SetDismissPledge,c2_age_of_splendor
+server,39,SM_ASK_JOIN_PARTY,AskJoinParty,c2_age_of_splendor
+server,3A,SM_JOIN_PARTY,JoinParty,c2_age_of_splendor
+server,3B,SM_WITHDRAWAL_PARTY,WithdrawalParty,c2_age_of_splendor
+server,3C,SM_OUST_PARTY_MEMBER,OustPartyMember,c2_age_of_splendor
+server,3D,SM_SET_OUST_PARTY_MEMBER,SetOustPartyMember,c2_age_of_splendor
+server,3E,SM_DISMISS_PARTY,DismissParty,c2_age_of_splendor
+server,3F,SM_SET_DISMISS_PARTY,SetDismissParty,c2_age_of_splendor
+server,40,SM__USER_ACK,UserAck,c3_rise_of_darkness_update_1
+server,41,SM_WARE_HOUSE_DEPOSIT_LIST,WareHouseDepositList,c2_age_of_splendor
+server,42,SM_WARE_HOUSE_WITHDRAW_LIST,WareHouseWithdrawList,c2_age_of_splendor
+server,43,SM_WARE_HOUSE_DONE,WareHouseDone,c2_age_of_splendor
+server,44,SM_SHORT_CUT_REGISTER,ShortCutRegister,c2_age_of_splendor
+server,45,SM_SHORT_CUT_INIT,ShortCutInit,c2_age_of_splendor
+server,46,SM_SHORT_CUT_DELETE,ShortCutDelete,c2_age_of_splendor
+server,47,SM_STOP_MOVE,StopMove,c2_age_of_splendor
+server,48,SM_MAGIC_SKILL_USE,MagicSkillUse,c2_age_of_splendor
+server,49,SM_MAGIC_SKILL_CANCELED,MagicSkillCanceled,c2_age_of_splendor
+server,4A,SM_SAY_2,Say2,c2_age_of_splendor
+server,4B,SM_EQUIP_UPDATE,EquipUpdate,c2_age_of_splendor
+server,4C,SM_DOOR_INFO,DoorInfo,c2_age_of_splendor
+server,4D,SM_DOOR_STATUS_UPDATE,DoorStatusUpdate,c2_age_of_splendor
+server,4E,SM_PARTY_SMALL_WINDOW_ALL,PartySmallWindowAll,c2_age_of_splendor
+server,4F,SM_PARTY_SMALL_WINDOW_ADD,PartySmallWindowAdd,c2_age_of_splendor
+server,50,SM_PARTY_SMALL_WINDOW_DELETE_ALL,PartySmallWindowDeleteAll,c2_age_of_splendor
+server,51,SM_PARTY_SMALL_WINDOW_DELETE,PartySmallWindowDelete,c2_age_of_splendor
+server,52,SM_PARTY_SMALL_WINDOW_UPDATE,PartySmallWindowUpdate,c2_age_of_splendor
+server,53,SM_TRADE_PRESS_OWN_OK,TradePressOwnOk,the_kamael
+server,54,SM_MAGIC_SKILL_LAUNCHED,MagicSkillLaunched,the_kamael
+server,55,SM_FRIEND_ADD_REQUEST_RESULT,FriendAddRequestResult,the_kamael
+server,56,145,FriendAdd,the_kamael
+server,57,SM_FRIEND_REMOVE,FriendRemove,the_kamael
+server,58,SM_FRIEND_LIST,FriendList,the_kamael
+server,59,SM_FRIEND_STATUS,FriendStatus,the_kamael
+server,5A,SM_PLEDGE_SHOW_MEMBER_LIST_ALL,PledgeShowMemberListAll,the_kamael
+server,5B,SM_PLEDGE_SHOW_MEMBER_LIST_UPDATE,PledgeShowMemberListUpdate,the_kamael
+server,5C,SM_PLEDGE_SHOW_MEMBER_LIST_ADD,PledgeShowMemberListAdd,the_kamael
+server,5D,SM_PLEDGE_SHOW_MEMBER_LIST_DELETE,PledgeShowMemberListDelete,the_kamael
+server,5E,110,MagicList,the_kamael
+server,5F,SM_SKILL_LIST,SkillList,the_kamael
+server,60,SM_VEHICLE_INFO,VehicleInfo,the_kamael
+server,61,SM_FINISH_ROTATING,FinishRotating,the_kamael
+server,62,SM_SYSTEM_MESSAGE,SystemMessage,the_kamael
+server,63,SM_START_PLEDGE_WAR,StartPledgeWar,the_kamael
+server,64,SM_REPLY_START_PLEDGE_WAR,ReplyStartPledgeWar,the_kamael
+server,65,SM_STOP_PLEDGE_WAR,StopPledgeWar,the_kamael
+server,66,SM_REPLY_STOP_PLEDGE_WAR,ReplyStopPledgeWar,the_kamael
+server,67,130,SurrenderPledgeWar,the_kamael
+server,68,SM_REPLY_SURRENDER_PLEDGE_WAR,ReplySurrenderPledgeWar,the_kamael
+server,69,132,SetPledgeCrest,the_kamael
+server,6A,SM_PLEDGE_CREST,PledgeCrest,the_kamael
+server,6B,SM_SETUP_GAUGE,SetupGauge,the_kamael
+server,6C,SM_VEHICLE_DEPARTURE,VehicleDeparture,the_kamael
+server,6D,114,VehicleCheckLocation,the_kamael
+server,6E,SM_GET_ON_VEHICLE,GetOnVehicle,the_kamael
+server,6F,SM_GET_OFF_VEHICLE,GetOffVehicle,the_kamael
+server,70,SM_TRADE_REQUEST,TradeRequest,the_kamael
+server,71,SM_RESTART_RESPONSE,RestartResponse,the_kamael
+server,72,SM_MOVE_TO_PAWN,MoveToPawn,the_kamael
+server,73,SM_SSQ_INFO,SSQInfo,the_kamael
+server,74,SM_GAME_GUARD_QUERY,GameGuardQuery,the_kamael
+server,75,SM_L2_FRIEND_LIST,L2FriendList,the_kamael
+server,77,SM_L2_FRIEND_STATUS,L2FriendStatus,the_kamael
+server,78,SM_L2_FRIEND_SAY,L2FriendSay,the_kamael
+server,79,SM_VALIDATE_LOCATION,ValidateLocation,the_kamael
+server,7A,SM_START_ROTATING,StartRotating,the_kamael
+server,7B,SM_SHOW_BOARD,ShowBoard,the_kamael
+server,7C,SM_CHOOSE_INVENTORY_ITEM,ChooseInventoryItem,the_kamael
+server,7D,382,Dummy_7D,the_kamael
+server,7E,SM_MOVE_TO_LOCATION_IN_VEHICLE,MoveToLocationInVehicle,the_kamael
+server,7F,SM_STOP_MOVE_IN_VEHICLE,StopMoveInVehicle,the_kamael
+server,80,SM_VALIDATE_LOCATION_IN_VEHICLE,ValidateLocationInVehicle,the_kamael
+server,81,SM_TRADE_UPDATE,TradeUpdate,the_kamael
+server,82,SM_TRADE_PRESS_OTHER_OK,TradePressOtherOk,the_kamael
+server,83,SM_FRIEND_ADD_REQUEST,FriendAddRequest,the_kamael
+server,84,SM_LOG_OUT_OK,LogOutOk,the_kamael
+server,85,SM_ABNORMAL_STATUS_UPDATE,AbnormalStatusUpdate,the_kamael
+server,86,SM_QUEST_LIST,QuestList,the_kamael
+server,87,SM_ENCHANT_RESULT,EnchantResult,the_kamael
+server,88,SM_PLEDGE_SHOW_MEMBER_LIST_DELETE_ALL,PledgeShowMemberListDeleteAll,the_kamael
+server,89,SM_PLEDGE_INFO,PledgeInfo,the_kamael
+server,8A,SM_PLEDGE_EXTENDED_INFO,PledgeExtendedInfo,the_kamael
+server,8B,SM_SURRENDER_PERSONALLY,SurrenderPersonally,the_kamael
+server,8C,SM_RIDE,Ride,the_kamael
+server,8D,SM__GNN_DONE,GiveNickNameDone,the_kamael
+server,8E,SM_PLEDGE_SHOW_INFO_UPDATE,PledgeShowInfoUpdate,the_kamael
+server,8F,SM_CLIENT_ACTION,ClientAction,the_kamael
+server,90,SM_ACQUIRE_SKILL_LIST,AcquireSkillList,the_kamael
+server,91,SM_ACQUIRE_SKILL_INFO,AcquireSkillInfo,the_kamael
+server,92,SM_SERVER_OBJECT_INFO,ServerObjectInfo,the_kamael
+server,93,SM_GM_HIDE,GMHide,the_kamael
+server,94,SM_ACQUIRE_SKILL_DONE,AcquireSkillDone,the_kamael
+server,95,SM_GM_VIEW_CHARACTER_INFO,GMViewCharacterInfo,the_kamael
+server,96,SM_GM_VIEW_PLEDGE_INFO,GMViewPledgeInfo,the_kamael
+server,97,SM_GM_VIEW_SKILL_INFO,GMViewSkillInfo,the_kamael
+server,98,172,GMViewMagicInfo,the_kamael
+server,99,SM_GM_VIEW_QUEST_INFO,GMViewQuestInfo,the_kamael
+server,9A,SM_GM_VIEW_ITEM_LIST,GMViewItemList,the_kamael
+server,9B,SM_GM_VIEW_WAREHOUSE_WITHDRAW_LIST,GMViewWarehouseWithdrawList,the_kamael
+server,9C,SM_LIST_PARTY_WATING,ListPartyWaiting,the_kamael
+server,9D,SM_PARTY_ROOM_INFO,PartyRoomInfo,the_kamael
+server,9E,SM_PLAY_SOUND,PlaySound,the_kamael
+server,9F,SM_STATIC_OBJECT,StaticObject,the_kamael
+server,A0,SM_PRIVATE_STORE_MANAGE_LIST,PrivateStoreSellManageList,the_kamael
+server,A1,SM_PRIVATE_STORE_LIST,PrivateStoreSellList,the_kamael
+server,A2,SM_PRIVATE_STORE_MSG,PrivateStoreSellMsg,the_kamael
+server,A3,SM_SHOW_MINIMAP,ShowMinimap,the_kamael
+server,A4,184,ReviveRequest,the_kamael
+server,A5,SM_ABNORMAL_VISUAL_EFFECT,AbnormalVisualEffect,the_kamael
+server,A6,SM_TUTORIAL_SHOW_HTML,TutorialShowHtml,the_kamael
+server,A7,SM_TUTORIAL_SHOW_QUESTION_MARK,ShowTutorialMark,the_kamael
+server,A8,SM_TUTORIAL_ENABLE_CLIENT_EVENT,TutorialEnableClientEvent,the_kamael
+server,A9,SM_TUTORIAL_CLOSE_HTML,TutorialCloseHtml,the_kamael
+server,AA,SM_SHOW_RADAR,ShowRadar,the_kamael
+server,AB,SM_WITHDRAW_ALLIANCE,WithdrawAlliance,the_kamael
+server,AC,SM_OUST_ALLIANCE_MEMBER_PLEDGE,OustAllianceMemberPledge,the_kamael
+server,AD,SM_DISMISS_ALLIANCE,DismissAlliance,the_kamael
+server,AE,199,SetAllianceCrest,the_kamael
+server,AF,SM_ALLIANCE_CREST,AllianceCrest,the_kamael
+server,B0,SM_SERVER_CLOSE_SOCKET,ServerCloseSocket,the_kamael
+server,B1,SM_PET_STATUS_SHOW,PetStatusShow,the_kamael
+server,B2,SM_PET_INFO,PetInfo,the_kamael
+server,B3,SM_PET_ITEM_LIST,PetItemList,the_kamael
+server,B4,SM_PET_INVENTORY_UPDATE,PetInventoryUpdate,the_kamael
+server,B5,SM_ALLIANCE_INFO,AllianceInfo,the_kamael
+server,B6,SM_PET_STATUS_UPDATE,PetStatusUpdate,the_kamael
+server,B7,SM_PET_DELETE,PetDelete,the_kamael
+server,B8,SM_DELETE_RADAR,DeleteRadar,the_kamael
+server,B9,SM_MY_TARGET_SELECTED,MyTargetSelected,the_kamael
+server,BA,SM_PARTY_MEMBER_POSITION,PartyMemberPosition,the_kamael
+server,BB,SM_ASK_JOIN_ALLIANCE,AskJoinAlliance,the_kamael
+server,BC,SM_JOIN_ALLIANCE,JoinAlliance,the_kamael
+server,BD,SM_PRIVATE_STORE_BUY_MANAGE_LIST,PrivateStoreBuyManageList,the_kamael
+server,BE,SM_PRIVATE_STORE_BUY_LIST,PrivateStoreBuyList,the_kamael
+server,BF,SM_PRIVATE_STORE_BUY_MSG,PrivateStoreBuyMsg,the_kamael
+server,C0,212,VehicleStart,the_kamael
+server,C1,SM_REQ_TIME_CHECK,RequestTimeCheck,the_kamael
+server,C2,SM_START_ALLIANCE_WAR,StartAllianceWar,the_kamael
+server,C3,SM_REPLY_START_ALLIANCE_WAR,ReplyStartAllianceWar,the_kamael
+server,C4,SM_STOP_ALLIANCE_WAR,StopAllianceWar,the_kamael
+server,C5,SM_REPLY_STOP_ALLIANCE_WAR,ReplyStopAllianceWar,the_kamael
+server,C6,SM_SURRENDER_ALLIANCE_WAR,SurrenderAllianceWar,the_kamael
+server,C7,SM_SKILL_COOL_TIME,SkillCoolTime,the_kamael
+server,C8,SM_PACKAGE_TO_LIST,PackageToList,the_kamael
+server,C9,SM_CASTLE_SIEGE_INFO,CastleSiegeInfo,c2_age_of_splendor
+server,CA,SM_CASTLE_SIEGE_ATTACKER_LIST,CastleSiegeAttackerList,c2_age_of_splendor
+server,CB,SM_CASTLE_SIEGE_DEFENDER_LIST,CastleSiegeDefenderList,c2_age_of_splendor
+server,CC,SM_NICK_NAME_CHANGED,NickNameChanged,c2_age_of_splendor
+server,CD,SM_PLEDGE_STATUS_CHANGED,PledgeStatusChanged,c2_age_of_splendor
+server,CE,SM_RELATION_CHANGED,RelationChanged,c2_age_of_splendor
+server,CF,234,EventTrigger,c2_age_of_splendor
+server,D0,SM_MULTI_SELL_LIST,MultiSellList,c2_age_of_splendor
+server,D1,SM_SET_SUMMON_REMAIN_TIME,SetSummonRemainTime,c2_age_of_splendor
+server,D2,SM_PACKAGE_SENDABLE_LIST,PackageSendableList,the_kamael
+server,D3,SM_EARTH_QUAKE,EarthQuake,the_kamael
+server,D4,SM_FLY_TO_LOCATION,FlyToLocation,the_kamael
+server,D5,225,BlockList,the_kamael
+server,D6,SM_SPECIAL_CAMERA,SpecialCamera,the_kamael
+server,D7,227,NormalCamera,the_kamael
+server,D8,SM_SKILL_REMAIN_SEC,SkillRemainSec,the_kamael
+server,D9,SM_NET_PING,NetPing,the_kamael
+server,DA,SM_DICE,Dice,the_kamael
+server,DB,SM_SNOOP,Snoop,the_kamael
+server,DC,SM_RECIPE_BOOK_ITEM_LIST,RecipeBookItemList,the_kamael
+server,DD,SM_RECIPE_ITEM_MAKE_INFO,RecipeItemMakeInfo,the_kamael
+server,DE,SM_RECIPE_SHOP_MANAGE_LIST,RecipeShopManageList,the_kamael
+server,DF,SM_RECIPE_SHOP_SELL_LIST,RecipeShopSellList,the_kamael
+server,E0,SM_RECIPE_SHOP_ITEM_INFO,RecipeShopItemInfo,the_kamael
+server,E1,SM_RECIPE_SHOP_MSG,RecipeShopMsg,the_kamael
+server,E2,SM_SHOW_CALC,ShowCalc,the_kamael
+server,E3,SM_MON_RACE_INFO,MonRaceInfo,the_kamael
+server,E4,SM_HENNA_ITEM_INFO,HennaItemInfo,the_kamael
+server,E5,SM_HENNA_INFO,HennaInfo,the_kamael
+server,E6,SM_HENNA_UNEQUIP_LIST,HennaUnequipList,the_kamael
+server,E7,SM_HENNA_UNEQUIP_INFO,HennaUnequipInfo,the_kamael
+server,E8,SM_MACRO_LIST,MacroList,the_kamael
+server,E9,SM_BUY_LIST_SEED,BuyListSeed,the_kamael
+server,EA,SM_SHOW_TOWN_MAP,ShowTownMap,the_kamael
+server,EB,SM_OBSERVER_START,ObserverStart,the_kamael
+server,EC,SM_OBSERVER_END,ObserverEnd,the_kamael
+server,ED,SM_CHAIR_SIT,ChairSit,the_kamael
+server,EE,SM_HENNA_EQUIP_LIST,HennaEquipList,the_kamael
+server,EF,SM_SELL_LIST_PROCURE,SellListProcure,the_kamael
+server,F0,SM_GM_HENNA_INFO,GMHennaInfo,the_kamael
+server,F1,SM_RADAR_CONTROL,RadarControl,the_kamael
+server,F2,SM_CLIENT_SET_TIME,ClientSetTime,the_kamael
+server,F3,SM_CONFIRM_DLG,ConfirmDlg,the_kamael
+server,F4,SM_PARTY_SPELLED,PartySpelled,the_kamael
+server,F5,SM_SHOP_PREVIEW_LIST,ShopPreviewList,the_kamael
+server,F6,SM_SHOP_PREVIEW_INFO,ShopPreviewInfo,the_kamael
+server,F7,SM_CAMERA_MODE,CameraMode,the_kamael
+server,F8,SM_SHOW_XMAS_SEAL,ShowXMasSeal,the_kamael
+server,F9,SM_ETC_STATUS_UPDATE,EtcStatusUpdate,the_kamael
+server,FA,SM_SHORT_BUFF_STATUS_UPDATE,ShortBuffStatusUpdate,the_kamael
+server,FB,SM_SSQ_STATUS,SSQStatus,the_kamael
+server,FC,SM_PETITION_VOTE,PetitionVote,the_kamael
+server,FD,SM_AGIT_DECO_INFO,AgitDecoInfo,the_kamael
+server,FE 00 01,568,ExLoadStatWorldRank,goddess_of_destruction
+server,FE 01 00,SM_EX_REGEN_MAX,ExRegenMax,c3_rise_of_darkness
+server,FE 01 01,569,ExLoadStatUser,goddess_of_destruction
+server,FE 02 00,SM_EX_EVENT_MATCH_USER_INFO,ExEventMatchUserInfo,the_kamael
+server,FE 02 01,570,ExLoadStatHotLink,goddess_of_destruction
+server,FE 03 00,SM_EX_COLOSSEUM_FENCE_INFO,ExColosseumFenceInfo,the_kamael
+server,FE 03 01,682,ExWaitWaitingSubStituteInfo,goddess_of_destruction
+server,FE 04 00,SM_EX_EVENT_MATCH_SPELLED_INFO,ExEventMatchSpelledInfo,the_kamael
+server,FE 04 01,683,ExRegistWaitingSubstituteOk,goddess_of_destruction
+server,FE 05 00,SM_EX_EVENT_MATCH_FIRECRACKER,ExEventMatchFirecracker,the_kamael
+server,FE 05 01,684,ExRegistPartySubstitute,goddess_of_destruction
+server,FE 06 00,SM_EX_EVENT_MATCH_TEAM_UNLOCKED,ExEventMatchTeamUnlocked,the_kamael
+server,FE 06 01,685,ExDeletePartySubstitute,goddess_of_destruction
+server,FE 07 00,SM_EX_EVENT_MATCH_GM_TEST,ExEventMatchGMTest,the_kamael
+server,FE 07 01,686,ExTimeOverPartySubstitute,goddess_of_destruction
+server,FE 08 00,SM_EX_PARTY_ROOM_MEMBER,ExPartyRoomMember,the_kamael
+server,FE 08 01,687,ExGet24HzSessionID,goddess_of_destruction
+server,FE 09 00,SM_EX_CLOSE_PARTY_ROOM,ExClosePartyRoom,the_kamael
+server,FE 09 01,521,Ex2ndPasswordCheck,goddess_of_destruction
+server,FE 0A 00,SM_EX_MANAGE_PARTY_ROOM_MEMBER,ExManagePartyRoomMember,the_kamael
+server,FE 0A 01,522,Ex2ndPasswordVerify,goddess_of_destruction
+server,FE 0B 00,306,ExEventMatchLockResult,the_kamael
+server,FE 0B 01,523,Ex2ndPasswordAck,goddess_of_destruction
+server,FE 0C 00,SM_EX_AUTO_SOUL_SHOT,ExAutoSoulShot,the_kamael
+server,FE 0C 01,572,ExFlyMoveBroadcast,goddess_of_destruction
+server,FE 0D 00,SM_EX_EVENT_MATCH_LIST,ExEventMatchList,the_kamael
+server,FE 0D 01,573,ExShowUsm,goddess_of_destruction
+server,FE 0E 00,SM_EX_EVENT_MATCH_OBSERVER,ExEventMatchObserver,the_kamael
+server,FE 0E 01,574,ExShowStatPage,goddess_of_destruction
+server,FE 0F 00,SM_EX_EVENT_MATCH_MESSAGE,ExEventMatchMessage,the_kamael
+server,FE 0F 01,575,ExIsCharNameCreatable,goddess_of_destruction
+server,FE 10 00,SM_EX_EVENT_MATCH_SCORE,ExEventMatchScore,the_kamael
+server,FE 10 01,518,ExGoodsInventoryChangedNotify,goddess_of_destruction
+server,FE 11 00,SM_EX_SERVER_PRIMITIVE,ExServerPrimitive,the_kamael
+server,FE 11 01,519,ExGoodsInventoryInfo,goddess_of_destruction
+server,FE 12 00,SM_EX_OPEN_MPCC,ExOpenMPCC,the_kamael
+server,FE 12 01,520,ExGoodsInventoryResult,goddess_of_destruction
+server,FE 13 00,SM_EX_CLOSE_MPCC,ExCloseMPCC,the_kamael
+server,FE 13 01,576,ExAlterSkillRequest,goddess_of_destruction
+server,FE 14 00,384,ExShowCastleInfo,the_kamael
+server,FE 14 01,577,ExNotifyFlyMoveStart,goddess_of_destruction
+server,FE 15 00,385,ExShowFortressInfo,the_kamael
+server,FE 15 01,456,ExDummy,goddess_of_destruction
+server,FE 16 00,386,ExShowAgitInfo,the_kamael
+server,FE 16 01,578,ExCloseCommission,goddess_of_destruction
+server,FE 17 00,387,ExShowFortressSiegeInfo,the_kamael
+server,FE 17 01,579,ExChangeAttributeItemList,goddess_of_destruction
+server,FE 18 00,388,ExPartyPetWindowAdd,the_kamael
+server,FE 18 01,580,ExChangeAttributeInfo,goddess_of_destruction
+server,FE 19 00,389,ExPartyPetWindowUpdate,the_kamael
+server,FE 19 01,581,ExChangeAttributeOk,goddess_of_destruction
+server,FE 1A 00,SM_EX_ASK_JOIN_MPCC,ExAskJoinMPCC,the_kamael
+server,FE 1A 01,582,ExChangeAttributeFail,goddess_of_destruction
+server,FE 1B 00,SM_PLEDGE_CREST_LARGE,ExPledgeEmblem,the_kamael
+server,FE 1B 01,688,ExExchangeSubstitute,goddess_of_destruction
+server,FE 1C 00,SM_EX_EVENT_MATCH_TEAM_INFO,ExEventMatchTeamInfo,the_kamael
+server,FE 1C 01,583,ExLightingCandleEvent,goddess_of_destruction
+server,FE 1D 00,SM_EX_EVENT_MATCH_CREATE,ExEventMatchCreate,the_kamael
+server,FE 1D 01,584,ExVitalityEffectInfo,goddess_of_destruction
+server,FE 1E 00,SM_EX_FISHING_START,ExFishingStart,the_kamael
+server,FE 1E 01,585,ExLoginVitalityEffectInfo,goddess_of_destruction
+server,FE 1F 00,SM_EX_FISHING_END,ExFishingEnd,the_kamael
+server,FE 1F 01,586,ExBR_PresentBuyProduct,goddess_of_destruction
+server,FE 20 00,SM_EX_SHOW_QUEST_INFO,ExShowQuestInfo,the_kamael
+server,FE 20 01,587,ExMentorList,goddess_of_destruction
+server,FE 21 00,SM_EX_SHOW_QUEST_MARK,ExShowQuestMark,the_kamael
+server,FE 21 01,588,ExMentorAdd,goddess_of_destruction
+server,FE 22 00,SM_EX_SEND_MANOR_LIST,ExSendManorList,the_kamael
+server,FE 22 01,589,ExMenteeListWaiting,goddess_of_destruction
+server,FE 23 00,SM_EX_SHOW_SEED_INFO,ExShowSeedInfo,the_kamael
+server,FE 23 01,590,ExInzoneWaitingInfo,tauti
+server,FE 24 00,SM_EX_SHOW_CROP_INFO,ExShowCropInfo,the_kamael
+server,FE 24 01,591,ExCuriousHouseState,tauti
+server,FE 25 00,SM_EX_SHOW_MANOR_DEFAULT_INFO,ExShowManorDefaultInfo,the_kamael
+server,FE 25 01,592,ExCuriousHouseEnter,tauti
+server,FE 26 00,SM_EX_SHOW_SEED_SETTING,ExShowSeedSetting,the_kamael
+server,FE 26 01,593,ExCuriousHouseLeave,tauti
+server,FE 27 00,SM_EX_FISHING_START_COMBAT,ExFishingStartCombat,the_kamael
+server,FE 27 01,594,ExCuriousHouseMemberList,tauti
+server,FE 28 00,SM_EX_FISHING_HP_REGEN,ExFishingHpRegen,the_kamael
+server,FE 28 01,595,ExCuriousHouseMemberUpdate,tauti
+server,FE 29 00,SM_EX_ENCHANT_SKILL_LIST,ExEnchantSkillList,the_kamael
+server,FE 29 01,596,ExCuriousHouseRemainTime,tauti
+server,FE 2A 00,SM_EX_ENCHANT_SKILL_INFO,ExEnchantSkillInfo,the_kamael
+server,FE 2A 01,597,ExCuriousHouseResult,tauti
+server,FE 2B 00,SM_EX_SHOW_CROP_SETTING,ExShowCropSetting,the_kamael
+server,FE 2B 01,598,ExCuriousHouseObserveList,tauti
+server,FE 2C 00,SM_EX_SHOW_SELL_CROP_LIST,ExShowSellCropList,the_kamael
+server,FE 2C 01,599,ExCuriousHouseObserveMode,tauti
+server,FE 2D 00,SM_EX_OLYMPIAD_MATCH_END,ExOlympiadMatchEnd,the_kamael
+server,FE 2E 00,SM_EX_MAIL_ARRIVED,ExMailArrived,the_kamael
+server,FE 2E 01,601,ExChoose_Shape_Shifting_Item,tauti
+server,FE 2F 00,SM_EX_STORAGE_MAX_COUNT,ExStorageMaxCount,the_kamael
+server,FE 2F 01,602,ExPut_Shape_Shifting_Target_Item_Result,tauti
+server,FE 30 00,SM_EX_EVENT_MATCH_MANAGE,ExEventMatchManage,the_kamael
+server,FE 30 01,603,ExPut_Shape_Shifting_Extraction_Item_Result,tauti
+server,FE 31 00,SM_EX_MULTI_PARTY_COMMAND_CHANNEL_INFO,ExMultiPartyCommandChannelInfo,the_kamael
+server,FE 31 01,604,ExShape_Shifting_Result,tauti
+server,FE 32 00,338,ExPCCafePointInfo,the_kamael
+server,FE 32 01,605,ExCastleState,tauti
+server,FE 33 00,339,ExSetCompassZoneCode,the_kamael
+server,FE 33 01,SM_EX_NC_GUARD_RECEIVE_DATA_FROM_SERVER,ExNCGuardReceiveDataFromServer,tauti
+server,FE 34 00,340,ExGetBossRecord,the_kamael
+server,FE 34 01,617,ExCheck_SpeedHack,tauti
+server,FE 35 00,SM_EX_ASK_JOIN_PARTY_ROOM,ExAskJoinPartyRoom,the_kamael
+server,FE 36 00,SM_EX_LIST_PARTY_MATCHING_WAITING_ROOM,ExListPartyMatchingWaitingRoom,the_kamael
+server,FE 37 00,343,ExSetMpccRouting,the_kamael
+server,FE 38 00,344,ExShowAdventurerGuideBook,the_kamael
+server,FE 39 00,345,ExShowScreenMessage,the_kamael
+server,FE 3A 00,346,PledgeSkillList,the_kamael
+server,FE 3B 00,347,PledgeSkillListAdd,the_kamael
+server,FE 3C 00,348,PledgePowerGradeList,the_kamael
+server,FE 3D 00,349,PledgeReceivePowerInfo,the_kamael
+server,FE 3E 00,350,PledgeReceiveMemberInfo,the_kamael
+server,FE 3F 00,SM_PLEDGE_RECEIVE_WAR_LIST,PledgeReceiveWarList,the_kamael
+server,FE 40 00,352,PledgeReceiveSubPledgeCreated,the_kamael
+server,FE 41 00,353,ExRedSky,the_kamael
+server,FE 42 00,354,PledgeReceiveUpdatePower,the_kamael
+server,FE 43 00,355,FlySelfDestination,the_kamael
+server,FE 44 00,356,ShowPCCafeCouponShowUI,the_kamael
+server,FE 45 00,357,ExSearchOrc,the_kamael
+server,FE 46 00,358,ExCursedWeaponList,the_kamael
+server,FE 47 00,359,ExCursedWeaponLocation,the_kamael
+server,FE 48 00,360,ExRestartClient,the_kamael
+server,FE 49 00,361,ExRequestHackShield,the_kamael
+server,FE 4A 00,362,ExUseSharedGroupItem,the_kamael
+server,FE 4B 00,363,ExMPCCShowPartyMemberInfo,the_kamael
+server,FE 4C 00,364,ExDuelAskStart,the_kamael
+server,FE 4D 00,365,ExDuelReady,the_kamael
+server,FE 4E 00,366,ExDuelStart,the_kamael
+server,FE 4F 00,367,ExDuelEnd,the_kamael
+server,FE 50 00,368,ExDuelUpdateUserInfo,the_kamael
+server,FE 51 00,369,ExShowVariationMakeWindow,the_kamael
+server,FE 52 00,370,ExShowVariationCancelWindow,the_kamael
+server,FE 53 00,371,ExPutItemResultForVariationMake,the_kamael
+server,FE 54 00,372,ExPutIntensiveResultForVariationMake,the_kamael
+server,FE 55 00,373,ExPutCommissionResultForVariationMake,the_kamael
+server,FE 56 00,374,ExVariationResult,the_kamael
+server,FE 57 00,375,ExPutItemResultForVariationCancel,the_kamael
+server,FE 58 00,376,ExVariationCancelResult,the_kamael
+server,FE 59 00,377,ExDuelEnemyRelation,the_kamael
+server,FE 5A 00,378,ExPlayAnimation,the_kamael
+server,FE 5B 00,379,ExMPCCPartyInfoUpdate,the_kamael
+server,FE 5C 00,380,ExPlayScene,the_kamael
+server,FE 5D 00,390,ExSpawnEmitter,the_kamael
+server,FE 5E 00,391,ExEnchantSkillInfoDetail,the_kamael
+server,FE 5F 00,392,ExBasicActionList,the_kamael
+server,FE 60 00,393,ExAirShipInfo,the_kamael
+server,FE 61 00,394,ExAttributeEnchantResult,the_kamael
+server,FE 62 00,395,ExChooseInventoryAttributeItem,the_kamael
+server,FE 63 00,396,ExGetOnAirShip,the_kamael
+server,FE 64 00,397,ExGetOffAirShip,the_kamael
+server,FE 65 00,398,ExMoveToLocationAirShip,the_kamael
+server,FE 66 00,399,ExStopMoveAirShip,the_kamael
+server,FE 67 00,400,ExShowTrace,the_kamael
+server,FE 68 00,401,ExItemAuctionInfo,the_kamael
+server,FE 69 00,381,ExNeedToChangeName,the_kamael
+server,FE 6A 00,402,ExPartyPetWindowDelete,the_kamael
+server,FE 6B 00,403,ExTutorialList,the_kamael
+server,FE 6C 00,404,ExRpItemLink,the_kamael
+server,FE 6D 00,405,ExMoveToLocationInAirShip,the_kamael
+server,FE 6E 00,406,ExStopMoveInAirShip,the_kamael
+server,FE 6F 00,407,ExValidateLocationInAirShip,the_kamael
+server,FE 70 00,408,ExUISetting,the_kamael
+server,FE 71 00,409,ExMoveToTargetInAirShip,the_kamael
+server,FE 72 00,410,ExAttackInAirShip,the_kamael
+server,FE 73 00,411,ExMagicSkillUseInAirShip,the_kamael
+server,FE 74 00,412,ExShowBaseAttributeCancelWindow,the_kamael
+server,FE 75 00,413,ExBaseAttributeCancelResult,the_kamael
+server,FE 76 00,414,ExSubPledgeSkillAdd,the_kamael
+server,FE 77 00,415,ExResponseFreeServer,the_kamael
+server,FE 78 00,SM_EX_SHOW_PROCURE_CROP_DETAIL,ExShowProcureCropDetail,the_kamael
+server,FE 79 00,SM_EX_HERO_LIST,ExHeroList,the_kamael
+server,FE 7A 00,SM_EX_OLYMPIAD_USER_INFO,ExOlympiadUserInfo,the_kamael
+server,FE 7B 00,SM_EX_OLYMPIAD_SPELLED_INFO,ExOlympiadSpelledInfo,the_kamael
+server,FE 7C 00,SM_EX_OLYMPIAD_MODE,ExOlympiadMode,the_kamael
+server,FE 7D 00,416,ExShowFortressMapInfo,the_kamael
+server,FE 7E 00,417,ExPVPMatchRecord,hellbound
+server,FE 7F 00,418,ExPVPMatchUserDie,hellbound
+server,FE 80 00,419,ExPrivateStorePackageMsg,hellbound
+server,FE 81 00,420,ExPutEnchantTargetItemResult,gracia_part_1
+server,FE 82 00,421,ExPutEnchantSupportItemResult,gracia_part_1
+server,FE 83 00,422,ExRequestChangeNicknameColor,gracia_part_1
+server,FE 84 00,423,ExGetBookMarkInfo,gracia_part_2
+server,FE 85 00,424,ExNotifyPremiumItem,gracia_part_2
+server,FE 86 00,425,ExGetPremiumItemList,gracia_part_2
+server,FE 87 00,426,ExPeriodicItemList,gracia_part_2
+server,FE 88 00,430,ExJumpToLocation,gracia_final
+server,FE 89 00,427,ExPVPMatchCCRecord,gracia_final
+server,FE 8A 00,428,ExPVPMatchCCMyRecord,gracia_final
+server,FE 8B 00,429,ExPVPMatchCCRetire,gracia_final
+server,FE 8C 00,431,ExShowTerritory,gracia_final
+server,FE 8D 00,SM_EX_NPC_QUEST_HTML_MESSAGE,ExNpcQuestHtmlMessage,gracia_final
+server,FE 8E 00,433,ExSendUIEvent,gracia_final
+server,FE 8F 00,434,ExNotifyBirthDay,gracia_final
+server,FE 90 00,435,ExShowDominionRegistry,gracia_final
+server,FE 91 00,436,ExReplyRegisterDominion,gracia_final
+server,FE 92 00,437,ExReplyDominionInfo,gracia_final
+server,FE 93 00,438,ExShowOwnthingPos,gracia_final
+server,FE 94 00,439,ExCleftList,gracia_final
+server,FE 95 00,440,ExCleftState,gracia_final
+server,FE 96 00,441,ExDominionChannelSet,gracia_final
+server,FE 97 00,442,ExBlockUpSetList,gracia_final
+server,FE 98 00,443,ExBlockUpSetState,gracia_final
+server,FE 99 00,444,ExStartScenePlayer,gracia_final
+server,FE 9A 00,445,ExAirShipTeleportList,gracia_final
+server,FE 9B 00,446,ExMpccRoomInfo,gracia_final
+server,FE 9C 00,447,ExListMpccWaiting,gracia_final
+server,FE 9D 00,448,ExDissmissMpccRoom,gracia_final
+server,FE 9E 00,449,ExManageMpccRoomMember,gracia_final
+server,FE 9F 00,450,ExMpccRoomMember,gracia_final
+server,FE A0 00,451,ExVitalityPointInfo,gracia_final
+server,FE A1 00,SM_EX_SHOW_SEED_MAP_INFO,ExShowSeedMapInfo,gracia_final
+server,FE A2 00,453,ExMpccPartymasterList,gracia_final
+server,FE A3 00,454,ExDominionWarStart,gracia_final
+server,FE A4 00,455,ExDominionWarEnd,gracia_final
+server,FE A5 00,464,ExShowLines,gracia_final_update_1
+server,FE A6 00,465,ExPartyMemberRenamed,gracia_final_update_1
+server,FE A7 00,467,ExEnchantSkillResult,gracia_epilogue
+server,FE A8 00,468,ExRefundList,gracia_epilogue
+server,FE A9 00,469,ExNoticePostArrived,gracia_epilogue
+server,FE AA 00,SM_EX_SHOW_RECEIVED_POST_LIST,ExShowReceivedPostList,gracia_epilogue
+server,FE AB 00,SM_EX_REPLY_RECEIVED_POST,ExReplyReceivedPost,gracia_epilogue
+server,FE AC 00,472,ExShowSentPostList,gracia_epilogue
+server,FE AD 00,473,ExReplySentPost,gracia_epilogue
+server,FE AE 00,474,ExResponseShowStepOne,gracia_epilogue
+server,FE AF 00,475,ExResponseShowStepTwo,gracia_epilogue
+server,FE B0 00,476,ExResponseShowContents,gracia_epilogue
+server,FE B1 00,477,ExShowPetitionHtml,gracia_epilogue
+server,FE B2 00,478,ExReplyPostItemList,gracia_epilogue
+server,FE B3 00,479,ExChangePostState,gracia_epilogue
+server,FE B4 00,480,ExNoticePostSent,gracia_epilogue
+server,FE B5 00,487,ExInitializeSeed,freya
+server,FE B6 00,482,ExRaidReserveResult,gracia_epilogue
+server,FE B7 00,28,ExBuySellList,gracia_epilogue
+server,FE B8 00,488,ExCloseRaidSocket,freya
+server,FE B9 00,489,ExPrivateMarketList,freya
+server,FE BA 00,490,ExRaidCharacterSelected,freya
+server,FE BB 00,491,ExAskCoupleAction,freya
+server,FE BC 00,462,ExBrBroadcastEventState,high_five
+server,FE BD 00,492,ExChangeNpcState,goddess_of_destruction
+server,FE BF 00,493,ExAskModifyPartyLooting,high_five
+server,FE C0 00,494,ExSetPartyLooting,high_five
+server,FE C1 00,495,ExRotation,high_five
+server,FE C2 00,496,ExChangeClientEffectInfo,high_five
+server,FE C3 00,497,ExMembershipInfo,high_five
+server,FE C4 00,498,ExReplyHandOverPartyMaster,high_five
+server,FE C5 00,499,ExQuestNpcLogList,high_five
+server,FE C6 00,500,ExQuestItemList,high_five
+server,FE C7 00,501,ExGMViewQuestItemList,high_five
+server,FE C8 00,502,ExRestartResponse,high_five
+server,FE C9 00,503,ExVoteSystemInfo,high_five
+server,FE CA 00,SM_EX_SHUTTLE_INFO,ExShuttleInfo,high_five
+server,FE CB 00,SM_EX_SUTTLE_GET_ON,ExSuttleGetOn,high_five
+server,FE CC 00,SM_EX_SUTTLE_GET_OFF,ExSuttleGetOff,high_five
+server,FE CD 00,SM_EX_SUTTLE_MOVE,ExSuttleMove,high_five
+server,FE CE 00,SM_EX_MTL_IN_SUTTLE,ExMoveToLocationInSuttle,high_five
+server,FE CF 00,SM_EX_STOP_MOVE_IN_SHUTTLE,ExStopMoveInShuttle,high_five
+server,FE D0 00,SM_EX_VALIDATE_LOCATION_IN_SHUTTLE,ExValidateLocationInShuttle,high_five
+server,FE D1 00,511,ExAgitAuctionCmd,high_five
+server,FE D2 00,512,ExConfirmAddingPostFriend,high_five
+server,FE D3 00,513,ExReceiveShowPostFriend,high_five
+server,FE D4 00,514,ExReceiveOlympiad,high_five
+server,FE D5 00,457,ExBR_GamePoint,high_five
+server,FE D6 00,458,ExBR_ProductList,high_five
+server,FE D7 00,459,ExBR_ProductInfo,high_five
+server,FE D8 00,460,ExBR_BuyProduct,high_five
+server,FE D9 00,537,ExBR_PremiumState,high_five
+server,FE DA 00,463,ExBrExtraUserInfo,high_five
+server,FE DB 00,466,ExBrBuffEventState,high_five
+server,FE DC 00,483,ExBR_RecentProductList,high_five
+server,FE DD 00,485,ExBR_MinigameLoadScores,high_five
+server,FE DE 00,486,ExBR_AgathionEnergyInfo,high_five
+server,FE DF 00,538,ExShowChannelingEffect,goddess_of_destruction
+server,FE E0 00,539,ExGetCrystalizingEstimation,goddess_of_destruction
+server,FE E1 00,540,ExGetCrystalizingFail,goddess_of_destruction
+server,FE E2 00,515,ExNavitAdventPointInfo,goddess_of_destruction
+server,FE E3 00,516,ExNavitAdventEffect,goddess_of_destruction
+server,FE E4 00,517,ExNavitAdventTimeChange,goddess_of_destruction
+server,FE E5 00,541,ExAbnormalStatusUpdateFromTarget,goddess_of_destruction
+server,FE E6 00,542,ExStopScenePlayer,goddess_of_destruction
+server,FE E7 00,543,ExFlyMove,goddess_of_destruction
+server,FE E8 00,544,ExDynamicQuest,goddess_of_destruction
+server,FE E9 00,545,ExSubjobInfo,goddess_of_destruction
+server,FE EA 00,546,ExChangeMPCost,goddess_of_destruction
+server,FE EB 00,547,ExFriendDetailInfo,goddess_of_destruction
+server,FE EC 00,548,ExBlockAddResult,goddess_of_destruction
+server,FE ED 00,549,ExBlockRemoveResult,goddess_of_destruction
+server,FE EE 00,550,ExBlockDetailInfo,goddess_of_destruction
+server,FE EF 00,551,ExLoadInzonePartyHistory,goddess_of_destruction
+server,FE F0 00,552,ExFriendNotifyNameChange,goddess_of_destruction
+server,FE F1 00,553,ExShowCommission,goddess_of_destruction
+server,FE F2 00,554,ExResponseCommissionItemList,goddess_of_destruction
+server,FE F3 00,555,ExResponseCommissionInfo,goddess_of_destruction
+server,FE F4 00,556,ExResponseCommissionRegister,goddess_of_destruction
+server,FE F5 00,557,ExResponseCommissionDelete,goddess_of_destruction
+server,FE F6 00,558,ExResponseCommissionList,goddess_of_destruction
+server,FE F7 00,559,ExResponseCommissionBuyInfo,goddess_of_destruction
+server,FE F8 00,560,ExResponseCommissionBuyItem,goddess_of_destruction
+server,FE F9 00,561,ExAcquirableSkillListByClass,goddess_of_destruction
+server,FE FA 00,562,ExMagicAttackInfo,goddess_of_destruction
+server,FE FB 00,563,ExAcquireSkillInfo,goddess_of_destruction
+server,FE FC 00,564,ExNewSkillToLearnByLevelUp,goddess_of_destruction
+server,FE FD 00,565,ExCallToChangeClass,goddess_of_destruction
+server,FE FE 00,566,ExChangeToAwakenedClass,goddess_of_destruction
+server,FE FF 00,567,ExTacticalSign,goddess_of_destruction

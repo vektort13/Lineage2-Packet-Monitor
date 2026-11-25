@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "algorithms": [
+    {
+      "id": "asterios",
+      "name": "Asterios · адаптивный",
+      "implementation": "src/l2_monitor/ciphers.py",
+      "notes": "Native-equivalent server transform and retained original client cipher; requires matching layout and runtime state."
+    },
+    {
+      "id": "l2xor16",
+      "name": "L2 · XOR16",
+      "implementation": "src/l2_monitor/ciphers.py",
+      "notes": "Implemented running XOR16. Availability does not establish support for an unregistered Engine.dll."
+    },
+    {
+      "id": "l2xor16-u64",
+      "name": "L2 · XOR16 / 64",
+      "implementation": "src/l2_monitor/classic_cipher.py",
+      "notes": "Running XOR16 with uint64LE key[8:16] incremented by body length. Engine support requires a separately verified profile."
+    },
+    {
+      "id": "plain",
+      "name": "Открытые данные",
+      "implementation": "src/l2_monitor/ciphers.py",
+      "notes": "Implemented identity transform. Availability does not establish support for an unregistered Engine.dll."
+    }
+  ],
+  "profiles": [
+    {
+      "id": "asterios-prime-observed-20261121",
+      "engine_sha256": "f9632145da8b27fcff5c22257c0a2b909e25e02825ba7e82f61a5dfd68c9b665",
+      "algorithm": "asterios",
+      "profile": "config/monitor-profile.json",
+      "evidence": [
+        "docs/native-cipher-notes.md",
+        "docs/decryption-progress.md",
+        "reports/decryption-20261121/offline-prime/exchange-verification.json"
+      ],
+      "validation": "verified",
+      "notes": "Both directions validated against retained native execution and captured exchange. This entry does not certify unrelated native send or raw replay features."
+    },
+    {
+      "id": "l2-highfive-xor64-557c9f6d",
+      "engine_sha256": "557c9f6d4f8bed1d517c38d9746d0b1895a440a32ce234f6e40067e6267efb24",
+      "algorithm": "l2xor16-u64",
+      "profile": "config/clients/l2-highfive-557c9f6d.json",
+      "evidence": [
+        "reports/new-client-decryption/native-xor-check.json",
+        "reports/new-client-decryption/runtime-decoder-check.json",
+        "docs/classic-tcp-anchors.md",
+        "docs/classic-skill-learning.md",
+        "reports/new-client-decryption/skill-actions/live-native-anchors-source.json",
+        "docs/classic-packet-queue.md",
+        "reports/new-client-decryption/packet-queue/live-source.json",
+        "docs/client-plaintext-tap.md",
+        "reports/new-client-decryption/client-plaintext-tap-live.json"
+      ],
+      "validation": "verified",
+      "notes": "640 native-equivalence cases, including 229 captured records; both directional end states match. Native TCP anchors, list/skill requests and exact C-to-S packet replay verified. Other automated game actions require their own supported layout. Native plaintext capture verified in both directions, with repeated attach/detach on the same game process."
+    }
+  ]
+}

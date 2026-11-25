@@ -1,0 +1,10 @@
+{
+  "date": "2026-11-25",
+  "platform": "Windows 11 x64",
+  "python": "3.12.7",
+  "tests": 376,
+  "passed": true,
+  "failures": 0,
+  "errors": 0,
+  "command": "python -m unittest discover -s tests -v"
+}

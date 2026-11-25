@@ -1,0 +1,88 @@
+{
+  "id": "l2-highfive-xor64-557c9f6d",
+  "engine_sha256": "557c9f6d4f8bed1d517c38d9746d0b1895a440a32ce234f6e40067e6267efb24",
+  "algorithm": "l2xor16-u64",
+  "native_actions_supported": false,
+  "root_pointer_rva": 7851384,
+  "socket_mode_offset": 80,
+  "auth_socket_offset": 76,
+  "game_socket_offset": 72,
+  "socket_vtable_rva": 5380540,
+  "encryption_enabled_offset": 37192,
+  "outgoing_key_offset": 37197,
+  "incoming_key_offset": 37214,
+  "outgoing_bytes_offset": 35192,
+  "incoming_bytes_offset": 35184,
+  "receive_progress_offset": 41208,
+  "opcode_map_offset": 41176,
+  "opcode_map_count": 209,
+  "extended_map_offset": 41192,
+  "extended_map_count": 152,
+  "fingerprints": [
+    {
+      "rva": 4039968,
+      "size": 66,
+      "sha256": "459beb27fa0b0333185b3d174c05697433bb0cc4a069ad903e72349a02834c6d"
+    },
+    {
+      "rva": 4040112,
+      "size": 56,
+      "sha256": "f313db5edc1c5b08cc6385f59fe19078ca69a189d17b7ef828426d3bacc05efd"
+    },
+    {
+      "rva": 4231312,
+      "size": 24,
+      "sha256": "efbc792336ea42d628eb1b5cfd482e148dc533f160f0e6ee5d28d17e9cda4769"
+    },
+    {
+      "rva": 4021808,
+      "size": 48,
+      "sha256": "c6e326112eb4b3dc8c1d80c56f6a1c2f07cfd51d5de41d5d088452743879d6a0"
+    },
+    {
+      "rva": 4021886,
+      "size": 48,
+      "sha256": "18e11f0654c5ace1b02421b4618c7b1f1b6e9924e441843b0430cf2ea64aabc7"
+    }
+  ],
+  "list_requests": {
+    "entry_rva": 4037456,
+    "code_hex": "b800800000e8a608daff568bb4240880000083be70910000000f8529010000837e38000f841f010000578dbe2c91000057e85a8a3657908b84241080000085c00f84fa000000538d8c24188000005150b9fe7f00008d442416e882c2ffff8bd883c40885db0f849d000000807c240ed0750f8b4c240f56e824c5ffff66894424",
+    "mask_hex": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff00000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+    "allowed_opcodes": [
+      "14",
+      "50"
+    ],
+    "transport": "original-client-ui-thread"
+  },
+  "skill_requests": {
+    "sender": "list_requests",
+    "opcodes": {
+      "list": 80,
+      "info": 115,
+      "learn": 124
+    },
+    "list_type": 0,
+    "format": "cb",
+    "formatter_rva": 4021808,
+    "community_menu": {
+      "root": "_bbslearnSkills",
+      "search_prefix": "_bbslearnSkills_search_ "
+    }
+  },
+  "receive_packet_buffer_offset": 2128,
+  "alternate_receive_offset": 41236,
+  "packet_requests": {
+    "sender": "list_requests",
+    "format": "cb",
+    "max_body_bytes": 32766
+  },
+  "packet_protocol": "classic-h5",
+  "plaintext_tap": {
+    "kind": "xor64-vtable",
+    "encrypt_rva": 4040112,
+    "decrypt_rva": 4039968,
+    "encrypt_slot": 31,
+    "decrypt_slot": 32
+  }
+}

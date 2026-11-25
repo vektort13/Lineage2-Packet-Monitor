@@ -1,0 +1,7 @@
+{
+  "name": "StatusUpdate",
+  "length": 19,
+  "sha256": "f0c19a17c300c3d339e78a0603ad872af2bd2742ed23c8f1ab57a001600d215b",
+  "raw_hex": "13001810d60110010000000d000000112d4c01",
+  "source": "reports/new-client-decryption/check-character/5304-StatusUpdate.json"
+}

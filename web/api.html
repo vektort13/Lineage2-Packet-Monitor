@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>L2 Monitor API</title><link rel="stylesheet" href="/styles.css"></head>
+<body><main style="max-width:1100px"><a class="button" href="/">← Монитор</a><h1>L2 Packet Monitor API</h1>
+<p>JSON UTF-8. GET /api/info возвращает token для заголовка X-Monitor-Token в POST. Адрес: 127.0.0.1:8765.</p>
+<section class="panel"><table><thead><tr><th>Метод</th><th>Путь</th><th>Данные</th></tr></thead><tbody>
+<tr><td>GET</td><td>/api/status</td><td>Процесс, соединение и результаты проверок</td></tr>
+<tr><td>GET</td><td>/api/processes · /api/interfaces</td><td>Процессы и интерфейсы</td></tr>
+<tr><td>GET</td><td>/api/packets</td><td>after, limit, categories, types, direction, search</td></tr>
+<tr><td>GET</td><td>/api/packets/{id}</td><td>Поля, raw_hex, цвет и SHA256</td></tr>
+<tr><td>GET</td><td>/api/types · /api/items</td><td>Типы пакетов и предметы вокруг</td></tr>
+<tr><td>GET</td><td>/api/export</td><td>Буфер пакетов JSONL</td></tr>
+<tr><td>GET</td><td>/api/library</td><td>kind=item/skill, server=IP:port, search</td></tr>
+<tr><td>GET</td><td>/api/library/export</td><td>format=json с образцами или csv</td></tr>
+<tr><td>POST</td><td>/api/start · /api/stop</td><td>Запуск и остановка захвата</td></tr>
+<tr><td>GET / POST</td><td>/api/ciphers · /api/cipher</td><td>Режимы и выбор шифра</td></tr>
+<tr><td>POST</td><td>/api/convert</td><td>mode, hex/text, encoding, update_length</td></tr>
+<tr><td>POST</td><td>/api/drafts</td><td>hex, encoding, необязательный packet_id</td></tr>
+<tr><td>GET</td><td>/api/drafts/{id}[.bin]</td><td>Копия JSON или BIN</td></tr>
+<tr><td>POST</td><td>/api/decrypt</td><td>Офлайн-тело S→C: hex, key, cipher, counter</td></tr>
+<tr><td>GET / POST</td><td>/api/sender · /api/send</td><td>Отправка недоступна; причина в статусе</td></tr>
+</tbody></table></section>
+<h2>Фильтры</h2><pre>/api/packets?categories=movement,inventory&amp;types=server:21,client:B0&amp;limit=250</pre>
+<p>Категории и типы работают совместно. Отсутствующий параметр означает все; пустой categories= или types= скрывает все. Следующий запрос использует after=cursor из ответа. Лимит 1–1000.</p>
+<h2>HEX ↔ текст</h2><pre>{"mode":"hex-to-text","hex":"58 35 30 31 00","encoding":"utf-8"}</pre>
+<pre>{"mode":"text-to-hex","text":"X501\\0","encoding":"utf-16le"}</pre>
+<p>Кодировки: utf-8, utf-16le, cp1251, latin-1. Обратимые escape-последовательности: \xNN — байт, \uNNNN — символ, \0 / \n / \r / \t / \\.</p>
+</main></body></html>

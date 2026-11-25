@@ -1,0 +1,4 @@
+# Windows desktop runtime, matching the release toolchain.
+PySide6-Essentials==6.12.0
+psutil==7.2.2
+unicorn==2.1.4

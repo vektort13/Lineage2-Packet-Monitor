@@ -1,0 +1,16 @@
+name: Feature request / Предложение
+description: Describe a new workflow or improvement / Предложить функцию или улучшение
+title: "[Feature] "
+body:
+  - type: textarea
+    id: workflow
+    attributes:
+      label: What do you want to do? / Какую задачу нужно решить?
+    validations:
+      required: true
+  - type: textarea
+    id: behavior
+    attributes:
+      label: Desired behavior / Желаемое поведение
+    validations:
+      required: true

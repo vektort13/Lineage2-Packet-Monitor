@@ -1,0 +1,203 @@
+{
+  "id": "asterios-prime-observed-20261121",
+  "process_name": "AsteriosGame.exe",
+  "game_port": 2110,
+  "engine_sha256": "f9632145da8b27fcff5c22257c0a2b909e25e02825ba7e82f61a5dfd68c9b665",
+  "root_pointer": 546067296,
+  "socket_offset": 72,
+  "socket_vtable": 542978668,
+  "outgoing_key_offset": 37500,
+  "incoming_key_offset": 37517,
+  "counter_address": 87773764,
+  "header_address": 87773104,
+  "zstream_address": 87773772,
+  "fingerprints": [
+    {
+      "address": 87582220,
+      "size": 64,
+      "sha256": "8706b29ee393051e98f53db2230f101c0e578f92cd49f56e827b20d702aead3e"
+    },
+    {
+      "address": 87582636,
+      "size": 64,
+      "sha256": "5838a1bdaf7b88543fbae225961001d5effcaeaf45d07154fa3ffaa1c6bd8cda"
+    },
+    {
+      "address": 87694532,
+      "size": 64,
+      "sha256": "99fb696771b606ff13c16bd4f72b4c3ad07cd5b22a95a61b4f1d2412b9e3781b"
+    }
+  ],
+  "runtime_path": ".",
+  "snapshot_dirs": [],
+  "native_sender": {
+    "entry": 541484944,
+    "opcode_map_offset": 42088,
+    "extended_map_offset": 42104,
+    "fingerprints": [
+      {
+        "address": 541484944,
+        "size": 311,
+        "sha256": "dd5c3e39fb05b166f2167b72f830056e4280b69352fe6c94f68910fb75c532e0"
+      },
+      {
+        "address": 541461744,
+        "size": 568,
+        "sha256": "a0e581f149fbbecc65ba9eaad429c8b8047a79b82c3e9de572da142839fa48ac"
+      },
+      {
+        "address": 541462688,
+        "size": 100,
+        "sha256": "c960242c51946162a08f11f847b7674afb856ed8b8ef32f34d2338ab0c6e2fc2"
+      },
+      {
+        "address": 541462448,
+        "size": 102,
+        "sha256": "fc0cf4a9b380eda5e0705823c443a109442089b9a6ebd53eecb50828c10a6fce"
+      }
+    ],
+    "runtime_enabled": false,
+    "raw_replay_enabled": true,
+    "raw_replay_live_verified": false,
+    "raw_replay_format": "c for one-byte body; cb for opcode and binary tail; original UI thread",
+    "blocked_reason": "В проверенном вызове из потока окна клиент отправил CMPF0: 6B8C11AD [0x50], а пакет 0x50 в захвате не подтверждён. Отправка в приложении не подключена."
+  },
+  "inventory_drop": {
+    "rva": 5121968,
+    "code_hex": "558bec6aff686da78efb64a100000000506489250000000083ec205356578965f08b3508f4e6fbc745fc00000000568d4dd4e809d6ffff8b46488b48688b3983ec0c8bc48b959000000089108b8d940000008948048b959800000089500881ec8800000089a5980000008d4d088bc4e83c28b3ff8b46488b48688b9770010000ffd28b4df464890d000000005f5e5b8be55dc29400",
+    "mask_hex": "ffffffff00ff00000000ffffffffffffffffffffffffffffffffffffffffffff00ffff00000000ffff00ffffffffffffff00ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff00ffffffffffffffffffffffffffffffff",
+    "item_info_size": 136,
+    "object_id_offset": 4,
+    "amount_offset": 16,
+    "evidence": "reports/inventory-drop-analysis",
+    "module_allocation_at_verification": "0xfb370000",
+    "player_position": {
+      "rva": 4176656,
+      "code_hex": "558bec6aff6836de8efb64a100000000506489250000000083ec205356578965f0c745fc000000008b450883400c018b500c803a4275198b480883c20189500c6a0050b870570f158b9008010000ffd2a108f4e6fb508d4dd4e882420e008b108b4d0c89118b50048951048b4008894108c745fcffffffff8b4df464890d000000005f5e5b8be55dc20800",
+      "mask_hex": "ffffffff00ff00000000ffffffffffffffffffffffffffffffffffffffffffff00ffff00ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff00000000ffffff00ffffffffffffffffffffffffffffffffffffffffffffffffffff00ffffffffffff00ffffffffffffffffffffffffffffffff"
+    },
+    "pickup": {
+      "rva": 5062864,
+      "code_hex": "558bec6aff683b298efb64a100000000506489250000000083ec145356578965f08b3508f4e6fbc745fc000000008b46488b48688b398b168bce8b8228070000ffd05083ec0c8bc48b4d0c89088b55108950048b4d148948088b5508528b46488b48688b97e8000000ffd2c745fcffffffff8b4df464890d000000005f5e5b8be55dc21000",
+      "mask_hex": "ffffffff00ff00000000ffffffffffffffffffffffffffffffffffffffffffff00ffff00000000ffff00ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff00ffffffffffff00ffffffffffffffffffffffffffffffff"
+    },
+    "skills": {
+      "list": {
+        "rva": 4162912,
+        "code_hex": "558bec6aff68d06e8efb64a100000000506489250000000083ec2c5356578965f0c745fc000000008b4508bb0100000001580c8b500c803a4275188b480803d389500c6a0050b870570f158b9008010000ffd2833d08f4e6fb0074246a0a8d4dc890e8bf0a4904885dfc8d45c850e87dbf0d00c645fc008d4dc890e8a5df4804c745fcffffffff8b4df464890d000000005f5e5b8be55dc20800",
+        "mask_hex": "ffffffffffff00000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff00000000ffffffffffffffffffffffffffffffffffffffffffffff00000000ffff00000000ffffffffffffffffffffffffffffffff00000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"
+      },
+      "info": {
+        "rva": 4079632,
+        "code_hex": "558bec6aff6860e18dfb64a100000000506489250000000083ec345356578965f033db895dfc895dec8b75088b4e088b460c0fb61083c00189460c8d45ec5056b870570f158b1490ffd2895d088b4e088b460c0fb61083c00189460c8d45085056b870570f158b1490ffd2895de88b4e088b460c0fb61083c00189460c8d45e85056b870570f158b1490ffd283460c018b460c80384275188b4e0883c00189460c5356b870570f158b9008010000ffd26a0a8d4dc090e8ed4c4a04c645fc018b45ec9952508d4dc090be500b0415ffd68b45089952508d4dc0ffd68b45e89952508d4dc0ffd68b0d08f4e6fb8b018d55c0528b80140f0000ffd0885dfc8d4dc090e864204a04c745fcffffffff8b4df464890d000000005f5e5b8be55dc20800",
+        "mask_hex": "ffffffffffff00000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff00000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff00000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"
+      },
+      "learn": {
+        "rva": 4079248,
+        "code_hex": "558bec6aff684de18dfb64a100000000506489250000000083ec345356578965f033db895dfc895dec8b75088b4e088b460c0fb61083c00189460c8d45ec5056b870570f158b1490ffd2895d088b4e088b460c0fb61083c00189460c8d45085056b870570f158b1490ffd2895de88b4e088b460c0fb61083c00189460c8d45e85056b870570f158b1490ffd283460c018b460c80384275188b4e0883c00189460c5356b870570f158b9008010000ffd26a0a8d4dc090e8154f4a04c645fc018b45ec9952508d4dc090be500b0415ffd68b45089952508d4dc0ffd68b45e89952508d4dc0ffd68b0d08f4e6fb8b018d55c0528b80180f0000ffd0885dfc8d4dc090e8de214a04c745fcffffffff8b4df464890d000000005f5e5b8be55dc20800",
+        "mask_hex": "ffffffffffff00000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff00000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff00000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"
+      }
+    },
+    "bypass": {
+      "rva": 4130208,
+      "code_hex": "558bec6aff68ad648efb64a100000000506489250000000083ec385356578965f0c745fc000000008d4dd490e85c9b3804bb01000000885dfc8b75088b4e088b460c0fb61003c389460c8d45d45056b870570f158b1490ffd2015e0c8b460c80384275188b4e0803c389460c6a0056b870570f158b9008010000ffd28b45d885c0744783c0ff85c07e406a0a8d4dbc90e8618a4904c645fc028d4dd490e821871f049952508d4dbc90e8294f49048d45bc508b0d08f4e6fb51e812170e00885dfc8d4dbc90e8185c4904c645fc008d4dd490e8b5ac4c04c745fcffffffff8b4df464890d000000005f5e5b8be55dc20800",
+      "mask_hex": "ffffffffffff00000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff00000000ffffffffffffffffffffffffffffffffffffffffffffffffffffff00000000ffffff00000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff00000000ffff00000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"
+    },
+    "use_item": {
+      "rva": 5070016,
+      "code_hex": "558bec6aff68662a8efb64a100000000506489250000000083ec345356578965f08bf1c745fc000000006a0a8d4dc490e88c363b04c645fc018b45089952508d4dc490bf500b0415ffd78b068bce8b9024070000ffd29952508d4dc4ffd78b46488b48688b118d45c4508b926c010000ffd28bf0c645fc008d4dc490e8820a3b048bc68b4df464890d000000005f5e5b8be55dc20400",
+      "mask_hex": "ffffffffffff00000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"
+    },
+    "player_info": {
+      "rva": 5110608,
+      "code_hex": "558bec6aff6808a58efb64a100000000506489250000000083ec185356578965f08bf1c745fc0000000056e810ffffff8945ec85c0745690ba70d79d208b482485c974093bca74108b4934ebf333c985d20f94c185c9741685c0743183b8780d00000074098b80780d00008945ec85c0741b8b40585056e8e407ffff8b4df464890d000000005f5e5b8be55dc3",
+      "mask_hex": "ffffffffffff00000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff00000000ffffffffffff00000000ffffffffffffffffff0000000000000000ff00000000ffffffffffffff0000000000000000ffffffffff00000000ffffffffffffffffff00000000ffffff00000000ffffffffffffffffffffffffffffffffff"
+    },
+    "manager_global_rva": 11531272
+  },
+  "npc_buffs": {
+    "name": "Newbie Guide",
+    "object_id": 268440888,
+    "xyz": [
+      -83123,
+      150868,
+      -3128
+    ],
+    "command": "01",
+    "skills": [
+      4322,
+      4323,
+      5637,
+      4324,
+      4325,
+      4326,
+      4327
+    ],
+    "level": 1,
+    "duration_seconds": 3600,
+    "html_title": "Newbie Guide:",
+    "html_link": "Give me some support magic."
+  },
+  "client_data": {
+    "ui_item_getter": {
+      "rva": 3968704,
+      "code_hex": "558bec6aff681bd98efb64a100000000506489250000000083ec1c5356578965f0c745fc00000000c745e000000000c745e4000000008b75088b4e088b460c0fb61083c00189460c8d45e05056b870570f158b1490ffd283460c018b460c80384275198b4e0883c00189460c6a0056b870570f158b9008010000ffd28d45e090b9487c8e208b89a8100000e8d028c6ff85c0740d05b4000000e882f8c4ff50eb0568d87a98fb8b4d0c90e8a28f4b04c745fcffffffff8b4df464890d000000005f5e5b8be55dc20800",
+      "mask_hex": "ffffffffffff00000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff00000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff00000000ffffff00000000ffffff00000000ffff000000000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"
+    },
+    "ui_stats_copy": {
+      "rva": 4639115,
+      "code_hex": "8b97b40000008956448b87b00000008946488b8fbc000000894e4c8b97b8000000895650",
+      "mask_hex": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"
+    },
+    "engine": {
+      "module_allocation_at_verification": "0x20000000",
+      "fingerprint": {
+        "rva": 4724640,
+        "code_hex": "558bec6aff68c1074d2064a100000000506489250000000083ec1c5356578965f0c745fc00000000a160538c2085c074318d88240200008d4508e84183c7ff85c0741f833801751a8378040074148b40048b4df464890d000000005f5e5b8be55dc333",
+        "mask_hex": "ffffffffffff00000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff00000000ffffff00000000ffffffffffffff00000000ffffff00000000ff00000000ffff00000000ffffffffffffffffffffffffffffffffffff"
+      }
+    },
+    "core": {
+      "module_allocation_at_verification": "0x15000000",
+      "fingerprint": {
+        "rva": 14208,
+        "code_hex": "8b4424043b05a01514157d0a8b0d9c1514158b0481c3",
+        "mask_hex": "ffffffffffff00000000ff00000000000000ffffffff"
+      }
+    },
+    "item_root_rva": 9337928,
+    "item_map_offset": 4264,
+    "name_index_offset": 180,
+    "name_array_rva": 1316252,
+    "name_count_rva": 1316256,
+    "player_context_rva": 9196384,
+    "player_map_offset": 548,
+    "actor_chain": [
+      72,
+      88,
+      56,
+      0,
+      60,
+      996
+    ],
+    "actor_id_offset": 88,
+    "record_id_offset": 24,
+    "max_hp_offset": 176,
+    "hp_offset": 180,
+    "record_level_offset": 136,
+    "record_name_offset": 28,
+    "record_name_bytes": 48,
+    "skill_map_offset": 112000,
+    "ui_skill_getter": {
+      "rva": 3916560,
+      "code_hex": "558bec6aff68d5d58efb64a100000000506489250000000083ec1c5356578965f033ff897dfc897de0897de48b75088b4e088b460c0fb61083c00189460c8d45e05056b870570f158b1490ffd2897d088b4e088b460c0fb61083c00189460c8d45085056b870570f158b1490ffd283460c018b460c80384275188b4e0883c00189460c5756b870570f158b9008010000ffd268d87a98fb8b750c8bce90e821594c04393d08f4e6fb74168b4508508b4de051e8892f1200508bce90e845594c04c745fcffffffff8b4df464890d000000005f5e5b8be55dc2",
+      "mask_hex": "ffffffffffff00000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff00000000ffffffffffffffffffffffffffffffffffffffffffff00000000ffffffffffffffffffffffffff00000000ff00000000ffffffffffff00000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"
+    },
+    "engine_skill_lookup": {
+      "rva": 4342656,
+      "code_hex": "558bec6aff6813f04c2064a100000000506489250000000083ec285356578965f08bf1c745fc000000008d45d050e8cd81ccffc645fc018d4dd0518d5508528bbe80b50100e8067eccff33c08945ec8b4d0c8b7dd48b55d03bc77d328b3482394e1c7522c645fc008d45d050e8cf81ccff8bc68b4df464890d000000005f5e5b8be55dc2080083c0018945ecebcac645fc008d4dd051e8a581ccff33c08b4df464890d000000005f5e5b8be55dc2",
+      "mask_hex": "ffffffffffff00000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff00000000ffffffffffffffffffffffffffffffffffffff00000000ffffffffffffffffffffffffffffffffff00000000ffffffff00000000ffffffffffff00000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffff00000000ffffffffffff00000000ffffffffffffffffffffffffffffffffffffff"
+    }
+  },
+  "packet_protocol": "asterios-448"
+}

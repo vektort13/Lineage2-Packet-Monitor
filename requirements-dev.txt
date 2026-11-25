@@ -1,0 +1,6 @@
+-r requirements.txt
+pyinstaller==6.22.3
+Pillow==12.2.0
+pefile==2024.8.26
+capstone==5.0.8
+websocket-client==1.9.0
