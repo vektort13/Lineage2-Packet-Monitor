@@ -8,8 +8,8 @@
     },
     {
       "path": "config/cipher-profiles.json",
-      "bytes": 2971,
-      "sha256": "6656ff7168df24f46f2fe4d711f173e874ebe8e70271c4d197957830db5245c2"
+      "bytes": 2908,
+      "sha256": "f508f92f30434a2225771fc46533ea2b84d90838ae29674d406b217c6a929859"
     },
     {
       "path": "config/client-catalog.json",
@@ -18,18 +18,18 @@
     },
     {
       "path": "config/clients/l2-highfive-557c9f6d.json",
-      "bytes": 2859,
-      "sha256": "a8dfa6bd456d0fdd11fdf2b459873d5c8afe17c1262faa9a4cf6dc704de1b51b"
+      "bytes": 2771,
+      "sha256": "d31fa7889054f8bd6f7861dd5916d26ed6a93b0a3d3145beddfb7874204150dc"
     },
     {
       "path": "config/monitor-profile.json",
-      "bytes": 14890,
-      "sha256": "5dcb8757ed4c56b0d0d1e438f15a8e8b3aeeecc2091f8303b1f1f999d54d0ed7"
+      "bytes": 14687,
+      "sha256": "b28be515c1ace31fa2d842f9073117f46855fc975d872cc3946a7003863b1fc7"
     },
     {
       "path": "config/opcodes-448.csv",
-      "bytes": 58473,
-      "sha256": "efa8c2e20e001b8bc373c0f0c9edf3c6874defcaf50d4e47f3c1f40c2c401260"
+      "bytes": 57516,
+      "sha256": "177f5c75be0f48c75a98732bd813d28f37767f96c167b21574555bfb5626dcb1"
     },
     {
       "path": "docs/assets/cover.png",

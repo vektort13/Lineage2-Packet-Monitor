@@ -10,6 +10,7 @@
 </p>
 
 <p align="center">
+  <a href="https://github.com/vektort13/L2PacketMonitor/actions/workflows/verify.yml"><img src="https://github.com/vektort13/L2PacketMonitor/actions/workflows/verify.yml/badge.svg" alt="Repository checks"></a>
   <b>English</b> · <a href="README.ru.md">Русский</a><br>
   <a href="https://github.com/vektort13/L2PacketMonitor/releases/latest">Download</a> ·
   <a href="docs/guides/USER_GUIDE.en.md">User guide</a> · <a href="docs/guides/USER_GUIDE.ru.md">Руководство</a> ·
