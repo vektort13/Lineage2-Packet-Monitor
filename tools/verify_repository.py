@@ -24,9 +24,16 @@ def headings(text):
 
 def main():
     errors = []
-    names = subprocess.check_output(
-        ['git', 'ls-files', '--cached', '--others', '--exclude-standard', '-z'],
-        cwd=ROOT).decode('utf-8').split('\0')
+    try:
+        names = subprocess.check_output(
+            ['git', 'ls-files', '--cached', '--others', '--exclude-standard', '-z'],
+            cwd=ROOT, stderr=subprocess.DEVNULL).decode('utf-8').split('\0')
+    except (FileNotFoundError, subprocess.CalledProcessError):
+        # The source/resource ZIP also supports this check without Git metadata.
+        excluded = {'.git', '.venv', 'build', 'build-assets', 'release', 'cache', '__pycache__'}
+        names = [p.relative_to(ROOT).as_posix() for p in ROOT.rglob('*')
+                 if p.is_file() and not excluded.intersection(p.relative_to(ROOT).parts)
+                 and (p.relative_to(ROOT).parts[0] != 'reports' or p.name == '.gitkeep')]
     files = sorted({ROOT / name for name in names if name})
     for path in files:
         if path.stat().st_size >= 100 * 1024 * 1024:
