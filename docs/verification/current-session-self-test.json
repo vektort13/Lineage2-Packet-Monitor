@@ -1,0 +1,14 @@
+{
+  "date": "2026-11-25",
+  "release_executable_sha256": "fba37162d9d9e5f23c95f020bb99fbe643417449358a81fc8ce455fa4f762513",
+  "release_recheck": {
+    "native_widgets": true,
+    "capture_started": false,
+    "passed": false,
+    "checks": [],
+    "screenshots": [],
+    "error": "Runtime dependency check: Native drop bridge test failed: {\"state\":0,\"exception\":0,\"wait\":4294967295,\"thread\":0,\"result\":0,\"sent\":0,\"hp\":0,\"max_hp\":0,\"healing\":0,\"destination\":[24.000,0.000,0.000]}\n"
+  },
+  "diagnostic_rebuild_error": "Runtime dependency check: Native drop bridge test failed: {\"state\":0,\"exception\":0,\"wait\":4294967295,\"thread\":0,\"result\":0,\"sent\":0,\"hp\":0,\"max_hp\":0,\"healing\":0,\"destination\":[24.000,0.000,0.000],\"win32_error\":126,\"stage\":\"install-hook\"}\n",
+  "observation": "Previously registered hook images succeed; newly copied images fail. A session hook-module resource limit is an unconfirmed hypothesis."
+}
