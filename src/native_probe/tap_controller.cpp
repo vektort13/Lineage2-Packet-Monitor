@@ -114,10 +114,8 @@ int wmain(int argc,wchar_t **argv) {
     HMODULE module=LoadLibraryW(argv[3]);
     HOOKPROC proc=module?(HOOKPROC)GetProcAddress(module,"_TapMessage@12"):NULL;
     HHOOK hook=proc?SetWindowsHookExW(WH_GETMESSAGE,proc,module,tid):NULL;
-    const char *stage=!module?"load-library":!proc?"find-export":!hook?"install-hook":"post-command";
     bool started=hook&&command(s,tid,1);
-    DWORD start_error=started?ERROR_SUCCESS:GetLastError();
-    printf("{\"started\":%s,\"state\":%ld,\"exception\":%lu,\"win32_error\":%lu,\"stage\":\"%s\"}\n",started?"true":"false",s->state,(DWORD)s->exception_code,start_error,stage);fflush(stdout);
+    printf("{\"started\":%s,\"state\":%ld,\"exception\":%lu}\n",started?"true":"false",s->state,(DWORD)s->exception_code);fflush(stdout);
     if(started){
         char line[32];
         while(fgets(line,sizeof(line),stdin)){

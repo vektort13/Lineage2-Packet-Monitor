@@ -132,11 +132,9 @@ int wmain(int argc, wchar_t **argv) {
     HMODULE module = LoadLibraryW(argv[3]);
     HOOKPROC proc = module ? (HOOKPROC)GetProcAddress(module, "_DropMessage@12") : NULL;
     HHOOK hook = done && proc ? SetWindowsHookExW(WH_GETMESSAGE, proc, module, tid) : NULL;
-    const char *stage = !module ? "load-library" : !proc ? "find-export" : !hook ? "install-hook" : "post-command";
     DWORD wait = WAIT_FAILED;
     if (hook && PostThreadMessageW(tid, RegisterWindowMessageW(L"L2PacketMonitor.Drop.1"), 0, 0))
         wait = WaitForSingleObject(done, 5000);
-    DWORD action_error = wait == WAIT_FAILED ? GetLastError() : ERROR_SUCCESS;
     LONG state = InterlockedCompareExchange(&request->state, 0, 0);
     printf("{\"state\":%ld,\"exception\":%lu,\"wait\":%lu,\"thread\":%lu,\"result\":%ld,\"sent\":%lu,\"hp\":%lu,\"max_hp\":%lu,\"healing\":%lu,\"destination\":[%.3f,%.3f,%.3f]",
            state, request->exception_code, wait, request->call_thread, request->result,
@@ -148,7 +146,7 @@ int wmain(int argc, wchar_t **argv) {
         for (int i = 0; i < 16; ++i) printf("%02x", request->tx_key_before[i]);
         printf("\"");
     }
-    printf(",\"win32_error\":%lu,\"stage\":\"%s\"}\n", action_error, stage);
+    printf("}\n");
     if (hook) UnhookWindowsHookEx(hook);
     if (module) FreeLibrary(module);
     if (done) CloseHandle(done);

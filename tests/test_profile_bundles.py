@@ -79,7 +79,7 @@ class ProfileBundleTests(unittest.TestCase):
         checksum = expected['engine_sha256']
         self.assertIsNone(loaded.find(checksum))  # Import does not promote a candidate to verified.
         self.assertEqual(loaded.load_profile(checksum, verified_only=False), expected)
-        self.assertTrue(loaded.resolve_profile(checksum, verified_only=False).is_relative_to(self.destination))
+        self.assertTrue(loaded.resolve_profile(checksum, verified_only=False).is_relative_to(self.destination.resolve()))
         self.assertEqual(len(loaded.profiles), len(self.base.profiles) + 1)
         export_profiles(self.root / 'again.zip', loaded)
         self.assertEqual(import_profiles(self.zip_path, destination=self.destination, existing=loaded),

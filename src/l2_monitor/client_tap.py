@@ -220,7 +220,7 @@ def check_client_tap():
             stdin=subprocess.PIPE, stdout=subprocess.PIPE, text=True, creationflags=NO_WINDOW)
         response = json.loads(controller.stdout.readline())
         if not response.get('started'):
-            raise RuntimeError('Native plaintext mock adapter did not install: ' + json.dumps(response))
+            raise RuntimeError('Native plaintext mock adapter did not install')
         ctypes.windll.user32.PostThreadMessageW(int(tid), 0x8001, 0, 0)
         observed = json.loads(target.stdout.readline())
         if observed != dict(passed=True, encrypt_calls=3, decrypt_calls=1):

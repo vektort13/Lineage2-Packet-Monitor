@@ -41,7 +41,7 @@ For network capture, install [Npcap](https://npcap.com/#download). The default d
 
 The script compiles the native modules, prepares the bundled configuration, loads Qt's Russian translation, packages the executable with [PyInstaller](https://pyinstaller.org/en/stable/usage.html), then runs its self-test. The output is `dist\L2PacketMonitor.exe`; generated work/spec files are under `build/`.
 
-The EXE includes Python, Qt, Unicorn, native modules, icons, catalog and server SDK. Npcap is installed separately.
+The EXE includes Python, Qt, Unicorn, native modules, icons, catalog and server SDK. Npcap is installed separately and is also required on the build PC for the complete EXE self-test.
 
 ## Verify
 

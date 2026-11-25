@@ -136,7 +136,7 @@ class CipherProfileTests(unittest.TestCase):
         profile.write_text(json.dumps(dict(engine_sha256='b' * 64)), encoding='utf-8')
         register_profile(entry(validation='verified'), self.path)
         registry = CipherProfiles(self.path, root=self.root)
-        self.assertEqual(registry.resolve_profile('a' * 64), profile)
+            self.assertEqual(registry.resolve_profile('a' * 64), profile.resolve())
         with self.assertRaises(ValueError):
             registry.load_profile('a' * 64)
         profile.write_text(json.dumps(dict(engine_sha256='a' * 64, layout='saved')), encoding='utf-8')
